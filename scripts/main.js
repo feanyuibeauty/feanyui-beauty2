@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // =========================
 window.addEventListener("load", function () {
   const glider = new Glider(document.querySelector(".glider"), {
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     draggable: true,
     dots: ".dots",
@@ -42,7 +42,7 @@ window.addEventListener("load", function () {
   // ===== Auto Scroll Logic =====
   let autoScrollInterval = setInterval(() => {
     glider.scrollItem(glider.slide + 1);
-  }, 3500); // Change every 3.5 seconds
+  }, 1500); // Change every 1.5 seconds
 
   // Optional: Pause on hover
   const gliderContainer = document.querySelector(".glider-contain");
