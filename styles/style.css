@@ -170,21 +170,23 @@ body {
 }
 
 .mission-section a {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  background-color: #6c7a4c;
-  padding: 12px 24px;
   font-weight: bold;
-  border-radius: 4px;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease;
-  font-size: 0.95rem;
+  color: #000;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  text-underline-offset: 3px; /* pushes underline a little lower */
+  background: none;
+  padding: 0;
+  border: none;
+  text-transform: none;
+  font-family: 'Inter', sans-serif;
+  transition: color 0.3s ease;
 }
 
 .mission-section a:hover {
-  background-color: #5e4c42;
+  color: #6c7a4c; /* subtle green hover effect */
 }
+
 
 .gallery {
   padding: 60px 20px;
