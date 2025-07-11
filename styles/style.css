@@ -12,6 +12,22 @@ body {
   line-height: 1.6;
 }
 
+/* Top header button override */
+.btn-schedule.top-btn {
+  margin-left: 30px;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  background-color: #7c6a58;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white; /* <-- This line sets the text color to white */
+}
+
+.btn-schedule.top-btn:hover {
+  background-color: #5e4c42;
+}
+
 /* Header */
 .top-header {
   display: flex;
