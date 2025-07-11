@@ -1,27 +1,36 @@
-// Toggle mobile hamburger menu
-document.addEventListener("DOMContentLoaded", function () {
- /* const menuToggle = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector(".nav-links");
+<!-- Glider and Lightbox Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
 
-  menuToggle.addEventListener("click", function () {
-    navLinks.classList.toggle("active");
-  });*/
-});
+<script>
+  // Glider initialization and Lightbox
+  window.addEventListener('load', function () {
+    new Glider(document.querySelector('.glider'), {
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      draggable: true,
+      dots: '.dots',
+      arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+      },
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: { slidesToShow: 2 }
+        },
+        {
+          breakpoint: 480,
+          settings: { slidesToShow: 1 }
+        }
+      ]
+    });
 
-// Simple automatic image slideshow (gallery section)
-let slideIndex = 0;
-function showSlides() {
-  const slides = document.getElementsByClassName("gallery-slide");
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  if (slides[slideIndex - 1]) {
-    slides[slideIndex - 1].style.display = "block";
-  }
-  setTimeout(showSlides, 3000); // Change image every 3 seconds
-}
-showSlides();
+    // Lightbox for image clicks
+    document.querySelectorAll('.glider img').forEach(image => {
+      image.addEventListener('click', () => {
+        basicLightbox.create(`<img src="${image.src}" style="max-width: 90vw; max-height: 90vh;">`).show();
+      });
+    });
+  });
+</script>
