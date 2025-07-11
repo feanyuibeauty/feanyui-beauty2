@@ -64,7 +64,9 @@ body {
 /* Hero section */
 .hero {
   display: flex;
-  min-height: 60vh;
+  height: 100vh; /* instead of min-height */
+  max-height: 800px; /* optional cap */
+  overflow: hidden;
   background-color: #fdfbf9;
 }
 
@@ -74,12 +76,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 0 30px; /* reduce top/bottom padding */
 }
 
 .hero-left img {
-  max-width: 90%;
+  width: 100%;
+  max-width: 500px;
   height: auto;
+  object-fit: contain;
 }
 
 .hero-right {
