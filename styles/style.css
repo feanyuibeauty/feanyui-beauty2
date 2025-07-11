@@ -171,7 +171,7 @@ body {
 
 .mission-section a {
   font-weight: bold;
-  color: #000;
+  /*color: #000;*/
   font-size: 1.2rem;
   text-decoration: underline;
   text-underline-offset: 3px; /* pushes underline a little lower */
@@ -179,7 +179,7 @@ body {
   padding: 0;
   border: none;
   text-transform: none;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Playfair Display', serif;
   transition: color 0.3s ease;
 }
 
