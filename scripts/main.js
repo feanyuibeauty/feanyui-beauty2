@@ -13,52 +13,47 @@ document.addEventListener("DOMContentLoaded", function () {
 // =========================
 // Glider + Auto Scroll + Lightbox
 // =========================
-window.addEventListener("load", function () {
-  const glider = new Glider(document.querySelector(".glider"), {
-    slidesToShow: 4,
+window.addEventListener('load', function () {
+  new Glider(document.querySelector('.glider'), {
+    slidesToShow: 5,
     slidesToScroll: 1,
     draggable: true,
-    dots: ".dots",
+    scrollLock: true,
+    duration: 1.2,
+    dots: '.dots',
     arrows: {
-      prev: ".glider-prev",
-      next: ".glider-next",
+      prev: '.glider-prev',
+      next: '.glider-next'
     },
+    rewind: true, // allows endless loop-like behavior
     responsive: [
       {
         breakpoint: 1024,
-        settings: { slidesToShow: 4 },
+        settings: { slidesToShow: 4 }
       },
       {
         breakpoint: 768,
-        settings: { slidesToShow: 3 },
+        settings: { slidesToShow: 3 }
       },
       {
         breakpoint: 480,
-        settings: { slidesToShow: 2 },
-      },
-    ],
+        settings: { slidesToShow: 2 }
+      }
+    ]
   });
 
-  // ===== Auto Scroll Logic =====
-  let autoScrollInterval = setInterval(() => {
-    glider.scrollItem(glider.slide + 1);
-  }, 1500); // Change every 1.5 seconds
+  // Autoscroll function
+  setInterval(() => {
+    const glider = document.querySelector('.glider').glider;
+    if (glider) {
+      glider.scrollItem('next');
+    }
+  }, 3500);
 
-  // Optional: Pause on hover
-  const gliderContainer = document.querySelector(".glider-contain");
-  gliderContainer.addEventListener("mouseenter", () => clearInterval(autoScrollInterval));
-  gliderContainer.addEventListener("mouseleave", () => {
-    autoScrollInterval = setInterval(() => {
-      glider.scrollItem(glider.slide + 1);
-    }, 3500);
-  });
-
-  // ===== Lightbox for Images Only =====
-  document.querySelectorAll(".glider img").forEach((img) => {
-    img.addEventListener("click", () => {
-      basicLightbox
-        .create(`<img src="${img.src}" style="max-width: 90vw; max-height: 90vh;" />`)
-        .show();
+  // Lightbox for images
+  document.querySelectorAll('.glider img').forEach(image => {
+    image.addEventListener('click', () => {
+      basicLightbox.create(`<img src="${image.src}" style="max-width: 90vw; max-height: 90vh;">`).show();
     });
   });
 });
