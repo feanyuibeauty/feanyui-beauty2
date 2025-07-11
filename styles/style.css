@@ -12,39 +12,43 @@ body {
   line-height: 1.6;
 }
 
-/* Header Navigation (top bar) */
+/* Header with brand and nav */
 .top-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 40px;
-  background-color: #fff8f3;
-  border-bottom: 1px solid #d8cfc2;
+  padding: 20px 30px;
+  background-color: #fdfbf9;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .brand-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.7em;
+  font-size: 2.2rem;
   font-weight: 700;
-  color: #3e2c23;
+  color: #5e4c42;
+  letter-spacing: 1px;
 }
 
 .top-nav a {
-  margin-left: 30px;
+  margin-left: 25px;
   text-decoration: none;
-  color: #3e2c23;
-  font-weight: 600;
-  font-size: 1.05em;
+  color: #5e4c42;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
 .top-nav a:hover {
-  color: #8d6e63;
+  color: #a6855e;
 }
 
 /* Hero section */
 .hero {
   display: flex;
   min-height: 90vh;
+  background-color: #fdfbf9;
 }
 
 .hero-left {
@@ -53,6 +57,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 30px;
 }
 
 .hero-left img {
@@ -67,46 +72,41 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 40px;
+  align-items: flex-start;
 }
 
 .hero-right h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  font-weight: bold;
-  color: #3e2c23;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #2c1e14;
 }
 
 .hero-right p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
   max-width: 500px;
+  margin-bottom: 25px;
+  color: #5b4636;
 }
 
-/* Slogan block */
-.slogan-text h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2em;
-  color: #3e2c23;
-  margin: 8px 0;
+.hero-right img {
+  max-width: 300px;
+  margin-bottom: 20px;
 }
 
-/* Schedule Button */
-.schedule-btn {
-  display: inline-block;
-  background-color: #a1887f;
-  color: white;
-  padding: 12px 28px;
+.btn-schedule {
+  background-color: #8e6f5a;
+  color: #fff;
   border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
+  padding: 10px 22px;
   font-size: 1rem;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
 }
 
-.schedule-btn:hover {
-  background-color: #c4a89a;
+.btn-schedule:hover {
+  background-color: #5e4c42;
 }
 
 /* Mission Section (Swella-style) */
@@ -125,7 +125,8 @@ body {
 .mission-section p {
   max-width: 700px;
   margin: 0 auto 30px auto;
-  font-size: 1rem;
+  font-size: 1.05rem;
+  color: #3e2d20;
 }
 
 .mission-section a {
@@ -139,8 +140,13 @@ body {
 
 /* Gallery slideshow */
 .gallery {
-  padding: 40px;
+  padding: 40px 20px;
   text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 .gallery-slide {
@@ -159,8 +165,9 @@ body {
 }
 
 .reviews h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .review {
@@ -170,10 +177,16 @@ body {
   color: #4b3a2a;
 }
 
-/* Email subscribe section */
+/* Subscribe Section */
 .subscribe {
   padding: 40px 20px;
   text-align: center;
+  background-color: #eee2d3; /* Lighter than schedule btn */
+}
+
+.subscribe h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
 .subscribe input[type="email"] {
