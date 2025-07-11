@@ -141,7 +141,7 @@ body {
 
 /* Decorative brown line above hero section (overlayed above green) */
 .section-divider {
-  border-bottom: 64px solid #a98467; /* softened elegant brown */
+  border-bottom: 30px solid #a98467; /* softened elegant brown */
   margin: 0 auto;
   width: auto;
   position: relative;
