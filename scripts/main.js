@@ -6,7 +6,7 @@ window.addEventListener('load', function () {
   const gliderElement = document.querySelector('.glider');
 
   const glider = new Glider(gliderElement, {
-    slidesToShow: 3,
+    slidesToShow: 6,
     slidesToScroll: 1,
     draggable: true,
     dots: '.dots',
