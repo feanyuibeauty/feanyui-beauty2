@@ -214,14 +214,16 @@ body {
 
 .glider img,
 .glider video {
-  max-height: 1000px;
-  width: auto;
-  margin: 0 10px;
+  width: 100%;
+  height: auto;
+  max-width: 220px;  /* caps individual item size */
+  margin: 0 8px;
   border-radius: 6px;
-  cursor: pointer;
   object-fit: cover;
+  cursor: pointer;
   transition: transform 0.2s ease;
 }
+
 
 .glider img:hover {
   transform: scale(1.03);
