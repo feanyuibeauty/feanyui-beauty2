@@ -35,7 +35,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
-  background-color: #6b4a2d;
+  /*background-color: #6b4a2d;*/
   position: sticky;
   top: 0;
   z-index: 1000;
