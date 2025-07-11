@@ -201,42 +201,34 @@ body {
   margin-bottom: 30px;
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.gallery-grid img {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.02);
-}
-
-
 .glider-contain {
   position: relative;
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 95%;
 }
 
-.glider img {
-  max-height: 220px;
+.glider {
+  display: flex;
+  align-items: center;
+}
+
+.glider img,
+.glider video {
+  max-height: 240px;
+  width: auto;
   margin: 0 10px;
   border-radius: 6px;
+  cursor: pointer;
   object-fit: cover;
-  width: auto;
+  transition: transform 0.2s ease;
+}
+
+.glider img:hover {
+  transform: scale(1.03);
+}
+
+.glider video {
+  cursor: default; /* so it doesn't conflict with play controls */
 }
 
 .glider-prev,
@@ -253,19 +245,10 @@ body {
   cursor: pointer;
 }
 
-.glider-prev { left: -25px; }
-.glider-next { right: -25px; }
+.glider-prev { left: -20px; }
+.glider-next { right: -20px; }
 
 .dots {
   margin-top: 10px;
   text-align: center;
-}
-
-.glider img {
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.glider img:hover {
-  transform: scale(1.03);
 }
