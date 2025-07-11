@@ -6,13 +6,13 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: #fdfbf9;
   color: #2c1e14;
   line-height: 1.6;
 }
 
-/* Header with brand and nav */
+/* Header */
 .top-header {
   display: flex;
   justify-content: space-between;
@@ -25,6 +25,7 @@ body {
 }
 
 .brand-name {
+  font-family: 'Playfair Display', serif;
   font-size: 2.2rem;
   font-weight: 700;
   color: #5e4c42;
@@ -71,12 +72,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center; /* center like Swella */
+  text-align: center;
   padding: 40px;
-  align-items: flex-start;
 }
 
 .hero-right h1 {
-  font-size: 2.8rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 15px;
   color: #5e4c42;
@@ -85,21 +88,23 @@ body {
 .hero-right p {
   font-size: 1.2rem;
   max-width: 500px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: #5b4636;
 }
 
-.hero-right img {
-  max-width: 300px;
-  margin-bottom: 20px;
+.hero-right img.slogan {
+  max-width: 360px;
+  margin-bottom: 25px;
 }
 
 .btn-schedule {
-  background-color: #8e6f5a;
+  background-color: #6c7a4c;
   color: #fff;
   border: none;
-  padding: 10px 22px;
+  padding: 14px 30px;
   font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
   cursor: pointer;
   border-radius: 4px;
   transition: background 0.3s ease;
@@ -109,124 +114,10 @@ body {
   background-color: #5e4c42;
 }
 
-/* Mission Section (Swella-style) */
-.mission-section {
-  background-color: #e7e0cc;
-  padding: 60px 30px;
-  text-align: center;
-}
-
-.mission-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-
-.mission-section p {
-  max-width: 700px;
-  margin: 0 auto 30px auto;
-  font-size: 1.05rem;
-  color: #3e2d20;
-}
-
-.mission-section a {
-  text-decoration: none;
-  background-color: #5e4c42;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-/* Gallery slideshow */
-.gallery {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.gallery h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-.gallery-slide {
-  display: none;
-  max-width: 80%;
-  height: auto;
-  margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-/* Reviews */
-.reviews {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.reviews h3 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-
-.review {
-  max-width: 600px;
-  margin: 0 auto 20px;
-  font-style: italic;
-  color: #4b3a2a;
-}
-
-/* Subscribe Section */
-.subscribe {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #eee2d3; /* Lighter than schedule btn */
-}
-
-.subscribe h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
-.subscribe input[type="email"] {
-  padding: 10px;
-  width: 250px;
-  margin-right: 10px;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-}
-
-.subscribe button {
-  padding: 10px 20px;
-  background-color: #5e4c42;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* Footer */
-.footer {
-  background-color: #d6dbb4;
-  padding: 30px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-left {
-  font-size: 0.9rem;
-}
-
-.footer-right {
-  display: flex;
-  gap: 15px;
-}
-
-.footer-right a img {
-  width: 24px;
-  height: 24px;
+/* Decorative brown line like Swella */
+.section-divider {
+  border-bottom: 5px solid #6b4a2d;
+  margin: 40px auto;
+  width: 80%;
+  max-width: 1000px;
 }
