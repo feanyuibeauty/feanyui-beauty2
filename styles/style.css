@@ -94,7 +94,7 @@ body {
 }
 
 .hero-right h1 {
-  font-family: var(--syne);
+  font-family: 'Playfair Display', serif;
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 15px;
