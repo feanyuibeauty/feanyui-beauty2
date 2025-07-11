@@ -10,6 +10,7 @@ body {
   background-color: #fdfbf9;
   color: #2c1e14;
   line-height: 1.6;
+  padding-top: 80px; 
 }
 
 /* Top header button override */
