@@ -1,74 +1,59 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Feanyui Beauty</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/main.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css"/>
+    <script defer src="scripts/main.js"></script>
 </head>
 <body>
     <header>
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
-        <nav class="mobile-nav" id="mobileNav">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Feanyui Beauty Logo" />
+        </div>
+        <div id="menu-toggle">☰</div>
+        <nav>
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Policies</a>
             <a href="#">Contact</a>
+            <a href="#">Schedule Appointment</a>
         </nav>
     </header>
-
-    <section class="split-hero">
-        <div class="left-panel">
-            <img src="assets/logo.png" alt="Feanyui Beauty Logo" class="logo">
-        </div>
-        <div class="right-panel">
-            <h1 class="headline">Every Crown Deserves Intention.</h1>
-            <p class="subheadline">Luxury braids rooted in care, culture, and confidence.</p>
-            <button class="cta">Schedule Appointment</button>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Every Crown Deserves Intention.</h1>
+            <p>Luxury braids rooted in care, culture, and confidence.</p>
+            <img src="assets/slogan.png" alt="Flawless Crown. Boldly Beautiful." />
+            <br/><br/>
+            <button>Schedule Appointment</button>
         </div>
     </section>
-
-    <section class="mission">
-        <h2 class="section-title">Meet Feanyui Beauty</h2>
+    <section class="about">
+        <h2>Meet Feanyui Beauty</h2>
         <p>At Feanyui Beauty, every braid tells a story — yours. We specialize in protective, care-first styling that honors your crown and your time. We believe in celebrating culture, prioritizing hair health, and creating styles that last beyond the chair. This is where intention meets elegance.</p>
-        <a href="#" class="learn-more">Learn More</a>
+        <a href="#"><button>Learn More</button></a>
     </section>
-
     <section class="gallery">
-        <h2 class="section-title">Gallery</h2>
-        <div class="carousel">
-            <img src="assets/placeholders/gallery1.jpg" alt="Placeholder">
-            <img src="assets/placeholders/gallery2.jpg" alt="Placeholder">
-        </div>
+        <h2>Gallery</h2>
+        <img src="assets/placeholder1.png" alt="Placeholder" width="150"/>
+        <img src="assets/placeholder2.png" alt="Placeholder" width="150"/>
     </section>
-
     <section class="reviews">
-        <h2 class="section-title">What Our Clients Are Saying</h2>
-        <div class="carousel">
-            <blockquote>"Absolutely loved my braids — so gentle, so neat!"</blockquote>
-            <blockquote>"Kelly took her time and made me feel like royalty."</blockquote>
-        </div>
+        <h2>What Our Clients Are Saying</h2>
+        <p>"Absolutely loved my braids — so gentle, so neat!"</p>
+        <p>"Kelly took her time and made me feel like royalty."</p>
     </section>
-
     <section class="subscribe">
-        <h2 class="section-title">Stay Connected</h2>
+        <h2>Stay Connected</h2>
         <p>Sign up to hear about specials, new styles, and more!</p>
-        <form>
-            <input type="email" placeholder="Your email" required>
-            <button type="submit">Subscribe</button>
-        </form>
+        <input type="email" placeholder="Your email"/>
+        <button>Subscribe</button>
     </section>
-
     <footer>
         <p>© 2025 Feanyui Beauty | Wichita, Kansas</p>
-        <div class="social-icons">
-            <a href="#"><img src="assets/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="assets/tiktok.png" alt="TikTok"></a>
-        </div>
     </footer>
 </body>
 </html>
