@@ -145,3 +145,41 @@ body {
   background-color: #6b4a2d;
   width: 100%;
 }
+
+.mission-section {
+  text-align: center;
+  padding: 60px 30px;
+  background-color: #fdfbf9;
+  color: #2c1e14;
+}
+
+.mission-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #5e4c42;
+  margin-bottom: 15px;
+}
+
+.mission-section p {
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #5b4636;
+}
+
+.mission-section a {
+  display: inline-block;
+  text-decoration: none;
+  color: #6c7a4c;
+  font-weight: bold;
+  border: 2px solid #6c7a4c;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.mission-section a:hover {
+  background-color: #6c7a4c;
+  color: white;
+}
