@@ -12,44 +12,36 @@ body {
   line-height: 1.6;
 }
 
-/* Hamburger menu */
-.menu-toggle {
-  font-size: 28px;
-  cursor: pointer;
-  padding: 20px;
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  z-index: 1000;
+/* Header Navigation (top bar) */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  background-color: #fff8f3;
+  border-bottom: 1px solid #d8cfc2;
 }
 
-.nav-links {
-  display: none;
-  list-style: none;
-  background: #fff;
-  position: fixed;
-  top: 60px;
-  left: 10px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  z-index: 999;
+.brand-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.7em;
+  font-weight: 700;
+  color: #3e2c23;
 }
 
-.nav-links li {
-  margin: 10px 0;
-}
-
-.nav-links a {
+.top-nav a {
+  margin-left: 30px;
   text-decoration: none;
-  color: #5b4636;
-  font-weight: 500;
+  color: #3e2c23;
+  font-weight: 600;
+  font-size: 1.05em;
 }
 
-.nav-links.active {
-  display: block;
+.top-nav a:hover {
+  color: #8d6e63;
 }
 
-/* Logo section */
+/* Hero section */
 .hero {
   display: flex;
   min-height: 90vh;
@@ -81,27 +73,40 @@ body {
   font-size: 2.5rem;
   margin-bottom: 20px;
   font-weight: bold;
+  color: #3e2c23;
 }
 
 .hero-right p {
   font-size: 1.1rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   max-width: 500px;
 }
 
-.btn-schedule {
-  background-color: #5e4c42;
-  color: #fff;
-  border: none;
-  padding: 12px 24px;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background 0.3s ease;
+/* Slogan block */
+.slogan-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2em;
+  color: #3e2c23;
+  margin: 8px 0;
 }
 
-.btn-schedule:hover {
-  background-color: #3e312a;
+/* Schedule Button */
+.schedule-btn {
+  display: inline-block;
+  background-color: #a1887f;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.schedule-btn:hover {
+  background-color: #c4a89a;
 }
 
 /* Mission Section (Swella-style) */
@@ -165,30 +170,6 @@ body {
   color: #4b3a2a;
 }
 
-/* Subscribe / Footer */
-.footer {
-  background-color: #d6dbb4;
-  padding: 30px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-left {
-  font-size: 0.9rem;
-}
-
-.footer-right {
-  display: flex;
-  gap: 15px;
-}
-
-.footer-right a img {
-  width: 24px;
-  height: 24px;
-}
-
 /* Email subscribe section */
 .subscribe {
   padding: 40px 20px;
@@ -211,4 +192,28 @@ body {
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background-color: #d6dbb4;
+  padding: 30px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  font-size: 0.9rem;
+}
+
+.footer-right {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-right a img {
+  width: 24px;
+  height: 24px;
 }
