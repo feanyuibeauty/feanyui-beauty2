@@ -148,34 +148,36 @@ body {
 
 .mission-section {
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px 60px;
   background-color: #fdfbf9;
 }
 
 .mission-section h2 {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-family: 'Playfair Display', serif;
   color: #5e4c42;
   margin-bottom: 20px;
 }
 
 .mission-section p {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: #3e2c1f;
-  max-width: 800px;
-  margin: 0 auto 25px auto;
-  line-height: 1.7;
+  max-width: 720px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
 }
 
 .mission-section a {
+  display: inline-block;
   text-decoration: none;
   color: #fff;
   background-color: #6c7a4c;
-  padding: 10px 22px;
+  padding: 12px 24px;
   font-weight: bold;
   border-radius: 4px;
   text-transform: uppercase;
   transition: background-color 0.3s ease;
+  font-size: 0.95rem;
 }
 
 .mission-section a:hover {
