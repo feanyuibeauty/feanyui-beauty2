@@ -56,23 +56,52 @@
   </section>
 
   <!-- Gallery -->
- <!-- Gallery -->
 <section class="gallery">
   <h2>Gallery</h2>
-  <div class="gallery-grid">
-    <img src="assets/gallery/gallery1.jpg" alt="Gallery Image" />
-    <img src="assets/gallery/gallery2.jpg" alt="Gallery Image" />
-    <img src="assets/gallery/gallery3.jpg" alt="Gallery Image" />
-    <img src="assets/gallery/gallery4.jpg" alt="Gallery Image" />
-    <img src="assets/gallery/gallery5.jpg" alt="Gallery Image" />
-    <img src="assets/gallery/gallery6.jpg" alt="Gallery Image" />
-    <img src="assets/gallery/gallery8.jpg" alt="Gallery Image" />
-    <img src="assets/gallery/gallery10.jpg" alt="Gallery Image" />
-    <img src="assets/gallery/gallery12.jpg" alt="Gallery Image" />
-    <img src="assets/gallery/gallery13.jpg" alt="Gallery Image" />
-    <img src="assets/gallery/gallery14.jpg" alt="Gallery Image" />
+  <div class="glider-contain">
+    <button class="glider-prev">«</button>
+    <div class="glider">
+      <img src="assets/gallery/gallery1.jpg" alt="Gallery Image 1" />
+      <img src="assets/gallery/gallery2.jpg" alt="Gallery Image 2" />
+      <img src="assets/gallery/gallery3.jpg" alt="Gallery Image 3" />
+      <img src="assets/gallery/gallery4.jpg" alt="Gallery Image 4" />
+      <img src="assets/gallery/gallery5.jpg" alt="Gallery Image 5" />
+      <img src="assets/gallery/gallery6.jpg" alt="Gallery Image 6" />
+      <img src="assets/gallery/gallery8.jpg" alt="Gallery Image 7" />
+      <img src="assets/gallery/gallery10.jpg" alt="Gallery Image 8" />
+      <img src="assets/gallery/gallery12.jpg" alt="Gallery Image 9" />
+      <img src="assets/gallery/gallery13.jpg" alt="Gallery Image 10" />
+      <img src="assets/gallery/gallery14.jpg" alt="Gallery Image 11" />
+
+      <!-- Placeholder for future videos -->
+      <!--
+      <video controls>
+        <source src="assets/gallery/gallery-video1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="assets/gallery/gallery-video2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="assets/gallery/gallery-video3.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="assets/gallery/gallery-video4.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="assets/gallery/gallery-video5.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      -->
+    </div>
+    <button class="glider-next">»</button>
+    <div class="dots"></div>
   </div>
 </section>
+
 
   <!-- Reviews -->
   <section class="reviews">
@@ -131,7 +160,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
 <script>
-  document.querySelectorAll('.glider img').forEach(image => {
+  document.querySelectorAll('.gallery-grid img').forEach(image => {
     image.addEventListener('click', () => {
       basicLightbox.create(`<img src="${image.src}" style="max-width: 90vw; max-height: 90vh;">`).show();
     });
