@@ -230,3 +230,12 @@ body {
   margin-top: 10px;
   text-align: center;
 }
+
+.glider img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.glider img:hover {
+  transform: scale(1.03);
+}
