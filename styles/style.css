@@ -1,0 +1,79 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fefdfb;
+  color: #3a2c20;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #fffaf5;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #3a2c20;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #eee5dd;
+}
+
+.hero h1 {
+  font-size: 2em;
+}
+
+.btn {
+  background-color: #8b5e3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+}
+
+.btn-outline {
+  border: 2px solid #8b5e3c;
+  background: none;
+  color: #8b5e3c;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.mission {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.gallery, .reviews, .subscribe {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.subscribe {
+  background-color: #d7d9aa;
+}
+
+footer {
+  background: #8b5e3c;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
