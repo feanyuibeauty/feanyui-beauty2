@@ -94,7 +94,7 @@ body {
 }
 
 .hero-right h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--syne);
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 15px;
