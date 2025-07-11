@@ -132,8 +132,8 @@ body {
 
 /* Decorative brown line like Swella */
 .section-divider {
-  border-bottom: 16px solid #6b4a2d;
+  border-bottom: 32px solid #6b4a2d;
   margin: auto;
   width: auto;
-  max-width: 1100px;
+  max-width: 1600px;
 }
