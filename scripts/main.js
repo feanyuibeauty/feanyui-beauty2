@@ -1,1 +1,0 @@
-// JavaScript for Feanyui Beauty interactions will go here
