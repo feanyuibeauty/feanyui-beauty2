@@ -162,10 +162,10 @@ body {
 }
 
 .mission-section p {
-  font-size: 1.15rem;
+  font-size: 1.18rem;
   color: #3e2c1f;
-  max-width: 720px;
-  margin: 0 auto 30px;
+  max-width: 1000px;
+  margin: 0 auto 50px;
   line-height: 1.8;
 }
 
