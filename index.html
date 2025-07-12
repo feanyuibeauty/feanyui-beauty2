@@ -14,28 +14,31 @@
 
   <!-- Header -->
   <header class="top-header">
-    <div class="hamburger menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav class="mobile-nav nav-links" id="mobileNav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="policies.html">Policies</a>
-      <a href="contact.html">Contact</a>
-      <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule top-btn" target="_blank">SCHEDULE NOW</a>
-    </nav>
-
-    <h1 class="brand-name">Feanyui Beauty</h1>
-
-    <nav class="top-nav nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="policies.html">Policies</a>
-      <a href="contact.html">Contact</a>
-      <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule top-btn" target="_blank">SCHEDULE NOW</a>
-    </nav>
+    <div class="nav-container">
+      <div class="nav-left">
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <h1 class="brand-name">Feanyui Beauty</h1>
+      </div>
+      <div class="nav-right">
+        <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule top-btn" target="_blank">SCHEDULE NOW</a>
+      </div>
+    </div>
   </header>
 
+  <!-- Mobile Menu -->
+  <div id="mobileNav" class="mobile-nav-overlay">
+    <button class="close-btn" onclick="toggleMenu()">×</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="policies.html">Policies</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule" target="_blank">SCHEDULE NOW</a>
+    </nav>
+  </div>
+
+  <!-- Divider -->
   <div class="section-divider"></div>
 
   <!-- Hero Section -->
@@ -52,6 +55,7 @@
     </div>
   </section>
 
+  <!-- Divider -->
   <div class="section-divider"></div>
 
   <!-- Mission Section -->
@@ -80,8 +84,7 @@
         <img src="assets/gallery/gallery12.jpg" alt="Gallery Image" />
         <img src="assets/gallery/gallery13.jpg" alt="Gallery Image" />
         <img src="assets/gallery/gallery14.jpg" alt="Gallery Image" />
-        <!-- Uncomment to include videos -->
-        <!--
+        <!-- Placeholder for videos if needed in future:
         <video controls><source src="assets/gallery/gallery-video1.mp4" type="video/mp4"></video>
         -->
       </div>
@@ -123,14 +126,12 @@
   <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
 
   <script>
-    // Hamburger toggle
     function toggleMenu() {
       document.getElementById("mobileNav").classList.toggle("active");
     }
 
-    // Glider initialization
     window.addEventListener('load', function () {
-      new Glider(document.querySelector('.glider'), {
+      const glider = new Glider(document.querySelector('.glider'), {
         slidesToShow: 5,
         slidesToScroll: 1,
         draggable: true,
@@ -143,22 +144,20 @@
         },
         rewind: true,
         responsive: [
-          {
-            breakpoint: 1024,
-            settings: { slidesToShow: 4 }
-          },
-          {
-            breakpoint: 768,
-            settings: { slidesToShow: 3 }
-          },
-          {
-            breakpoint: 480,
-            settings: { slidesToShow: 2 }
-          }
+          { breakpoint: 1024, settings: { slidesToShow: 4 }},
+          { breakpoint: 768, settings: { slidesToShow: 3 }},
+          { breakpoint: 480, settings: { slidesToShow: 2 }}
         ]
       });
 
-      // Lightbox for gallery media
+      // Auto-scroll the gallery in a loop
+      setInterval(() => {
+        if (glider) {
+          glider.scrollItem('next');
+        }
+      }, 3500);
+
+      // Lightbox for images and videos
       document.querySelectorAll('.glider img, .glider video').forEach(media => {
         media.addEventListener('click', () => {
           if (media.tagName.toLowerCase() === 'img') {
