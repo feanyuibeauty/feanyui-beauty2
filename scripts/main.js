@@ -1,7 +1,7 @@
 // =========================
 // Hamburger toggle (for mobile nav)
 // =========================
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");
 
@@ -70,4 +70,4 @@ window.addEventListener('load', function () {
       });
     });
   }
-});
+});*/
