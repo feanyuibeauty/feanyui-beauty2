@@ -2,16 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Feanyui Beauty</title>
-  <link rel="stylesheet" href="styles/style.css" />
   <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css" />
+  <link rel="stylesheet" href="styles/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css">
 </head>
 <body>
-
   <!-- Header -->
   <header class="top-header">
     <div class="nav-container">
@@ -19,15 +17,15 @@
         <button class="hamburger" onclick="toggleMenu()">☰</button>
         <h1 class="brand-name">Feanyui Beauty</h1>
       </div>
-      <div class="nav-right">
+      <div class="nav-right desktop-only">
         <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule top-btn" target="_blank">SCHEDULE NOW</a>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Menu -->
+  <!-- Mobile Nav Overlay -->
   <div id="mobileNav" class="mobile-nav-overlay">
-    <button class="close-btn" onclick="toggleMenu()">×</button>
+    <button class="close-btn" onclick="toggleMenu()">&times;</button>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -37,9 +35,6 @@
       <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule" target="_blank">SCHEDULE NOW</a>
     </nav>
   </div>
-
-  <!-- Divider -->
-  <div class="section-divider"></div>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -55,9 +50,6 @@
     </div>
   </section>
 
-  <!-- Divider -->
-  <div class="section-divider"></div>
-
   <!-- Mission Section -->
   <section class="mission-section">
     <h2>Meet Feanyui Beauty</h2>
@@ -67,29 +59,20 @@
     <a href="#">Learn More</a>
   </section>
 
-  <!-- Gallery Section -->
+  <!-- Gallery Section with Splide Carousel -->
   <section class="gallery">
     <h2>Gallery</h2>
-    <div class="glider-contain">
-      <button class="glider-prev">«</button>
-      <div class="glider">
-        <img src="assets/gallery/gallery1.jpg" alt="Gallery Image" />
-        <img src="assets/gallery/gallery2.jpg" alt="Gallery Image" />
-        <img src="assets/gallery/gallery3.jpg" alt="Gallery Image" />
-        <img src="assets/gallery/gallery4.jpg" alt="Gallery Image" />
-        <img src="assets/gallery/gallery5.jpg" alt="Gallery Image" />
-        <img src="assets/gallery/gallery6.jpg" alt="Gallery Image" />
-        <img src="assets/gallery/gallery8.jpg" alt="Gallery Image" />
-        <img src="assets/gallery/gallery10.jpg" alt="Gallery Image" />
-        <img src="assets/gallery/gallery12.jpg" alt="Gallery Image" />
-        <img src="assets/gallery/gallery13.jpg" alt="Gallery Image" />
-        <img src="assets/gallery/gallery14.jpg" alt="Gallery Image" />
-        <!-- Placeholder for videos if needed in future:
-        <video controls><source src="assets/gallery/gallery-video1.mp4" type="video/mp4"></video>
-        -->
+    <div class="splide" id="image-carousel">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide"><img src="assets/gallery/gallery1.jpg" alt="Gallery Image" /></li>
+          <li class="splide__slide"><img src="assets/gallery/gallery2.jpg" alt="Gallery Image" /></li>
+          <li class="splide__slide"><img src="assets/gallery/gallery3.jpg" alt="Gallery Image" /></li>
+          <li class="splide__slide"><img src="assets/gallery/gallery4.jpg" alt="Gallery Image" /></li>
+          <li class="splide__slide"><img src="assets/gallery/gallery5.jpg" alt="Gallery Image" /></li>
+          <li class="splide__slide"><img src="assets/gallery/gallery6.jpg" alt="Gallery Image" /></li>
+        </ul>
       </div>
-      <button class="glider-next">»</button>
-      <div class="dots"></div>
     </div>
     <a href="services.html#gallery-section" class="view-all-btn">View All</a>
   </section>
@@ -122,57 +105,28 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('#image-carousel', {
+        type: 'loop',
+        autoplay: true,
+        interval: 2000,
+        pauseOnHover: true,
+        perPage: 5,
+        breakpoints: {
+          1024: { perPage: 4 },
+          768: { perPage: 3 },
+          480: { perPage: 2 }
+        },
+        arrows: true,
+        pagination: false,
+      }).mount();
+    });
+
     function toggleMenu() {
       document.getElementById("mobileNav").classList.toggle("active");
     }
-
-    window.addEventListener('load', function () {
-      const glider = new Glider(document.querySelector('.glider'), {
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        draggable: true,
-        scrollLock: true,
-        duration: 1.2,
-        dots: '.dots',
-        arrows: {
-          prev: '.glider-prev',
-          next: '.glider-next'
-        },
-        rewind: true,
-        responsive: [
-          { breakpoint: 1024, settings: { slidesToShow: 4 }},
-          { breakpoint: 768, settings: { slidesToShow: 3 }},
-          { breakpoint: 480, settings: { slidesToShow: 2 }}
-        ]
-      });
-
-      // Auto-scroll the gallery in a loop
-      setInterval(() => {
-        if (glider) {
-          glider.scrollItem('next');
-        }
-      }, 3500);
-
-      // Lightbox for images and videos
-      document.querySelectorAll('.glider img, .glider video').forEach(media => {
-        media.addEventListener('click', () => {
-          if (media.tagName.toLowerCase() === 'img') {
-            basicLightbox.create(`<img src="${media.src}" style="max-width: 90vw; max-height: 90vh;">`).show();
-          } else {
-            basicLightbox.create(`
-              <video controls autoplay style="max-width: 90vw; max-height: 90vh;">
-                <source src="${media.src}" type="video/mp4">
-              </video>
-            `).show();
-          }
-        });
-      });
-    });
   </script>
-
 </body>
 </html>
