@@ -18,7 +18,7 @@ body {
   position: sticky;                      /* Keeps header stuck at top when scrolling */
   top: 0;                                /* Anchors the sticky header to the top */
   z-index: 1000;                         /* Makes sure header stays above other content */
-  padding: 20px 30px;                    /* Adds space inside header on all sides */
+  /*padding: 20px 30px;                    /* Adds space inside header on all sides */
   display: flex;                         /* Arranges children in a row (logo + nav) */
   justify-content: space-between;       /* Pushes logo left and nav right */
   align-items: center;                  /* Vertically centers items in the header */
