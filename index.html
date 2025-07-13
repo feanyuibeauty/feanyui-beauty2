@@ -14,11 +14,14 @@
 
   <!-- Header -->
  <header class="top-header">
+  <!-- Left Side: Logo + Brand Name -->
   <div class="nav-left">
     <img src="assets/logo.png" alt="Logo" class="brand-icon" />
     <h1 class="brand-name">Feanyui Beauty</h1>
   </div>
- <div class="desktop-nav-right">
+
+  <!-- Desktop Navigation (Only on Desktop) -->
+  <div class="desktop-nav-right">
     <nav class="top-nav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -26,9 +29,13 @@
       <a href="policies.html">Policies</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <!-- Do NOT show this button on desktop -->
+  </div>
+
+  <!-- Mobile-Only: Hamburger + Schedule Now -->
   <div class="mobile-header-right">
-    <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
-    <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule" target="_blank">Schedule Now</a>
+    <button class="hamburger" id="mobileBurger" onclick="toggleMenu()">☰</button>
+    <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule mobile-schedule" target="_blank">Schedule Now</a>
   </div>
 </header>
 
