@@ -291,38 +291,89 @@ body {
 }
 
 /* ================== SUBSCRIBE SECTION ================== */
+/* Subscribe Section (Swella style) */
 .subscribe {
-  background-color: #f3e8df;     /* Light brown background */
-  text-align: center;            /* Center content */
-  padding: 60px 20px;            /* Space around content */
+  display: flex;                        /* Use flexbox layout to arrange children in a row */
+  flex-wrap: wrap;                      /* Allow items to wrap to the next line if needed */
+  justify-content: space-between;      /* Push content to opposite sides (left and right) */
+  align-items: center;                 /* Vertically align items in the center */
+  background-color: #a3b18a;           /* Light purple background (like Swella's theme) */
+  padding: 60px 30px;                  /* 60px top/bottom, 30px left/right padding inside the section */
+  gap: 30px;                           /* Space between left and right content blocks */
+  color: #2c1e14;                      /* Text color (deep brown) */
 }
 
-.subscribe h2 {
-  font-size: 2rem;               /* Heading size */
-  margin-bottom: 20px;          /* Space under heading */
+.subscribe-left {
+  flex: 1;                             /* Take up equal space on the left side */
+  min-width: 250px;                   /* Minimum width allowed before wrapping */
 }
 
-.subscribe input[type="email"] {
-  padding: 10px;                 /* Space inside the input box */
-  width: 300px;                  /* Fixed width */
-  border: 1px solid #ccc;        /* Light border around input */
-  border-radius: 4px;            /* Rounded corners */
-  margin-right: 10px;            /* Space between input and button */
+.subscribe-left h3 {
+  font-size: 1.6rem;                   /* Slightly large heading text */
+  font-weight: 700;                    /* Bold font */
+  margin-bottom: 10px;                 /* Space below the heading */
 }
 
-.subscribe button {
-  padding: 10px 20px;            /* Space inside button */
-  background-color: #6c7a4c;     /* Green background */
-  color: white;                  /* White text */
-  border: none;                  /* No border */
-  border-radius: 4px;            /* Rounded button */
-  font-weight: bold;             /* Bold text */
-  cursor: pointer;               /* Hand cursor on hover */
+.subscribe-left p {
+  font-size: 1rem;                     /* Standard paragraph text size */
+  line-height: 1.5;                    /* Controls vertical spacing between lines of text */
+}
+
+.subscribe-form {
+  display: flex;                       /* Use flexbox to arrange input and button side by side */
+  flex: 1;                             /* Take up equal space on the right side */
+  justify-content: flex-end;          /* Push form items to the right side */
+  min-width: 280px;                   /* Minimum width of form to prevent squishing */
+  gap: 10px;                          /* Space between email input and subscribe button */
+}
+
+.subscribe-form input[type="email"] {
+  flex: 1;                             /* Input field expands to take up available space */
+  padding: 12px 15px;                 /* Inner spacing: 12px top/bottom, 15px left/right */
+  font-size: 1rem;                    /* Standard readable text size */
+  border: 1px solid #000;             /* Solid black border */
+  border-radius: 2px;                 /* Slightly rounded corners */
+  background: #fff;                   /* White background for the input */
+  outline: none;                      /* Removes blue outline on focus */
+}
+
+.subscribe-form button {
+  padding: 12px 24px;                 /* More padding to give button a thick shape */
+  background-color: #2c1e14;          /* Deep brown/black background (like Swella) */
+  color: #fff;                        /* White text on the button */
+  font-weight: bold;                  /* Bold text for emphasis */
+  border: none;                       /* No border */
+  border-radius: 2px;                 /* Slightly rounded corners */
+  cursor: pointer;                    /* Cursor changes to pointer on hover */
+  transition: background 0.3s ease;   /* Smooth background color change on hover */
+}
+
+.subscribe-form button:hover {
+  background-color: #5e4c42;          /* Slightly lighter brown on hover */
+}
+
+/* Responsive tweaks for small screens */
+@media (max-width: 768px) {
+  .subscribe {
+    flex-direction: column;           /* Stack content vertically instead of side by side */
+    align-items: flex-start;          /* Align children to the left */
+  }
+
+  .subscribe-form {
+    width: 100%;                      /* Make form span full width */
+    justify-content: flex-start;      /* Align items to the left instead of right */
+    flex-direction: column;           /* Stack input and button vertically */
+  }
+
+  .subscribe-form input[type="email"],
+  .subscribe-form button {
+    width: 100%;                      /* Make input and button full width on small screens */
+  }
 }
 
 /* ================== FOOTER SECTION ================== */
 .footer {
-  background-color: #5e4c42;     /* Dark brown background */
+  background-color: #9da27e;     /* Dark brown background */
   color: white;                  /* White text */
   padding: 20px;                 /* Inner spacing */
   display: flex;                 /* Layout left/right footer items */
