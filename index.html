@@ -13,37 +13,29 @@
 <body>
 
   <!-- Header -->
-  <header class="top-header">
+ <header class="top-header">
   <div class="nav-left">
     <img src="assets/logo.png" alt="Logo" class="brand-icon" />
     <h1 class="brand-name">Feanyui Beauty</h1>
   </div>
 
-  <div class="desktop-nav-right">
-    <nav class="top-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="policies.html">Policies</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <div class="mobile-header-right">
     <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
-    <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule top-btn" target="_blank">Schedule Now</a>
+    <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule" target="_blank">Schedule Now</a>
   </div>
 </header>
 
+<!-- Mobile Dropdown Nav -->
+<div id="mobileNav" class="mobile-nav-overlay">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="policies.html">Policies</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
 
-
-  <!-- Mobile Menu -->
-  <div id="mobileNav" class="mobile-nav-overlay">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="policies.html">Policies</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
 
   <!-- Divider -->
   <div class="section-divider"></div>
@@ -159,6 +151,14 @@
       });
     });
   </script>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("mobileNav");
+    const burger = document.getElementById("hamburger");
 
+    nav.classList.toggle("active");
+    burger.textContent = nav.classList.contains("active") ? "×" : "☰";
+  }
+</script>
 </body>
 </html>
