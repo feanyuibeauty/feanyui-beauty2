@@ -19,7 +19,7 @@
       <h1 class="brand-name">Feanyui Beauty</h1>
     </div>
 
-    <div class="nav-right">
+    <div class="desktop-nav-right">
       <nav class="top-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -27,7 +27,7 @@
         <a href="policies.html">Policies</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule top-btn" target="_blank">SCHEDULE NOW</a>
+      <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule top-btn" target="_blank">Schedule Now</a>
       <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
     </div>
   </header>
@@ -150,7 +150,6 @@
         }
       }).mount();
 
-      // Lightbox for gallery
       document.querySelectorAll('.splide__slide img').forEach(img => {
         img.addEventListener('click', () => {
           basicLightbox.create(`<img src="${img.src}" style="max-width: 90vw; max-height: 90vh;" />`).show();
