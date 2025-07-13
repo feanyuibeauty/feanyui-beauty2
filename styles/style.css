@@ -28,9 +28,10 @@ body {
 
 /* Brand logo and name */
 .nav-left {
-  display: flex;
-  align-items: center;
-}
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 
 .brand-icon {
   height: 36px;
@@ -49,6 +50,7 @@ body {
 /* Top nav */
 .top-nav {
   display: flex;
+ /* display: none;*/
   gap: 18px; /* tighten spacing */
   align-items: center;
 }
@@ -68,7 +70,7 @@ body {
 .desktop-nav-right {
   display: flex;
   align-items: center;
-  gap: 18px; /* tighter spacing */
+  gap: 15px; /* tighter spacing */
   flex-wrap: nowrap;
 }
 
@@ -314,15 +316,27 @@ body {
 }
 
 /* Responsive rules */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .top-nav {
-    display: none;
+    display: none;*/
+  }@media (max-width: 768px) {
+  .top-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .hamburger {
+  /*.hamburger {
     display: block;
+  }*/
+  .hamburger {
+    font-size: 24px;
+    padding: 4px 10px;
+    background: none;
+    border: none;
+    color: #5e4c42;
   }
-
+}
   .desktop-nav-right {
     flex-direction: row;
     align-items: center;
@@ -330,10 +344,11 @@ body {
   }
 
   .btn-schedule {
-    padding: 8px 14px;
+    font-size: 0.85rem;
+    padding: 6px 12px;
   }
 }
-
+ 
 @media (min-width: 769px) {
   .mobile-nav-overlay {
     display: none !important;
