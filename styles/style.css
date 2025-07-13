@@ -411,6 +411,18 @@ body {
   margin: 0 5px;                          /* Small space between legal links */
 }
 
+.footer-divider-social {
+  background-color: #cfd6b4;
+  padding: 20px 30px;
+}
+
+.divider-line {
+  width: 100%;
+  max-width: 1000px;
+  height: 1px;
+  background-color: #2c1e14;
+  margin: 30px auto 25px;
+}
 
 /* === Mobile Responsive Adjustments === */
 @media (max-width: 768px) {
