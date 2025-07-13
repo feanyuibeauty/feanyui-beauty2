@@ -28,10 +28,9 @@ body {
 
 /* Brand logo and name */
 .nav-left {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+  display: flex;
+  align-items: center;
+}
 
 .brand-icon {
   height: 36px;
@@ -50,7 +49,6 @@ body {
 /* Top nav */
 .top-nav {
   display: flex;
- /* display: none;*/
   gap: 18px; /* tighten spacing */
   align-items: center;
 }
@@ -70,7 +68,7 @@ body {
 .desktop-nav-right {
   display: flex;
   align-items: center;
-  gap: 15px; /* tighter spacing */
+  gap: 18px; /* tighter spacing */
   flex-wrap: nowrap;
 }
 
@@ -317,38 +315,27 @@ body {
 
 /* Responsive rules */
 @media (max-width: 768px) {
-  .top-header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  .top-nav {
+    display: none;
   }
 
-  .nav-left {
-    display: flex;
+  .hamburger {
+    display: block;
+  }
+
+  .desktop-nav-right {
+    flex-direction: row;
     align-items: center;
     gap: 10px;
   }
 
-  .desktop-nav-right {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .top-nav {
-    display: none; /* hide nav links */
-  }
-
   .btn-schedule {
-    font-size: 0.85rem;
-    padding: 6px 10px;
+    padding: 8px 14px;
   }
+}
 
-  .hamburger {
-    font-size: 24px;
-    padding: 4px 10px;
-    background: none;
-    border: none;
-    color: #5e4c42;
+@media (min-width: 769px) {
+  .mobile-nav-overlay {
+    display: none !important;
   }
 }
