@@ -291,100 +291,150 @@ body {
 }
 
 /* ================== SUBSCRIBE SECTION ================== */
-/* Subscribe Section (Swella style) */
+/* === Subscribe Section (Swella-inspired) === */
 .subscribe {
-  display: flex;                        /* Use flexbox layout to arrange children in a row */
-  flex-wrap: wrap;                      /* Allow items to wrap to the next line if needed */
-  justify-content: space-between;      /* Push content to opposite sides (left and right) */
-  align-items: center;                 /* Vertically align items in the center */
-  background-color: #a3b18a;           /* Light purple background (like Swella's theme) */
-  padding: 60px 30px;                  /* 60px top/bottom, 30px left/right padding inside the section */
-  gap: 30px;                           /* Space between left and right content blocks */
-  color: #2c1e14;                      /* Text color (deep brown) */
+  display: flex;                       /* Lays out subscribe section using Flexbox */
+  flex-wrap: wrap;                    /* Allows items to wrap to next line on small screens */
+  justify-content: space-between;    /* Puts left and right sides apart with space between */
+  align-items: flex-start;           /* Aligns items at the top */
+  background-color: #cfd6b4;         /* Light sage green background for brand consistency */
+  padding: 60px 30px;                /* Top/bottom 60px, left/right 30px padding around content */
+  gap: 30px;                         /* Space between left and right parts */
+  color: #2c1e14;                    /* Sets text color to dark brown */
 }
 
 .subscribe-left {
-  flex: 1;                             /* Take up equal space on the left side */
-  min-width: 250px;                   /* Minimum width allowed before wrapping */
+  flex: 1;                            /* Allows left side to grow and fill available space */
+  min-width: 250px;                  /* Ensures it doesn’t get smaller than 250px */
 }
 
 .subscribe-left h3 {
-  font-size: 1.6rem;                   /* Slightly large heading text */
-  font-weight: 700;                    /* Bold font */
-  margin-bottom: 10px;                 /* Space below the heading */
+  font-size: 1.6rem;                 /* Sets heading size */
+  font-weight: 700;                  /* Makes it bold */
+  margin-bottom: 10px;              /* Adds space below the heading */
+  color: #2c1e14;                    /* Dark brown text */
 }
 
 .subscribe-left p {
-  font-size: 1rem;                     /* Standard paragraph text size */
-  line-height: 1.5;                    /* Controls vertical spacing between lines of text */
+  font-size: 1rem;                   /* Sets paragraph text size */
+  line-height: 1.5;                  /* Adds breathing room between lines */
+  color: #2c1e14;                    /* Dark brown text again */
 }
 
 .subscribe-form {
-  display: flex;                       /* Use flexbox to arrange input and button side by side */
-  flex: 1;                             /* Take up equal space on the right side */
-  justify-content: flex-end;          /* Push form items to the right side */
-  min-width: 280px;                   /* Minimum width of form to prevent squishing */
-  gap: 10px;                          /* Space between email input and subscribe button */
+  display: flex;                     /* Flex layout for form and button */
+  flex: 1;                           /* Allows the form to take available space */
+  justify-content: flex-end;        /* Pushes form content (input + button) to the right */
+  min-width: 280px;                 /* Ensures it doesn’t get too narrow */
+  gap: 10px;                         /* Space between input and button */
 }
 
 .subscribe-form input[type="email"] {
-  flex: 1;                             /* Input field expands to take up available space */
-  padding: 12px 15px;                 /* Inner spacing: 12px top/bottom, 15px left/right */
-  font-size: 1rem;                    /* Standard readable text size */
-  border: 1px solid #000;             /* Solid black border */
-  border-radius: 2px;                 /* Slightly rounded corners */
-  background: #fff;                   /* White background for the input */
-  outline: none;                      /* Removes blue outline on focus */
+  flex: 1;                           /* Makes input box grow and fill space */
+  padding: 12px 15px;               /* Inside padding for the input box */
+  font-size: 1rem;                  /* Text size inside the input */
+  border: 1px solid #2c1e14;        /* Border color matches text */
+  border-radius: 2px;               /* Slightly rounded corners */
+  background: #fff;                 /* White background inside the input */
+  outline: none;                    /* Removes the default blue outline on focus */
 }
 
 .subscribe-form button {
-  padding: 12px 24px;                 /* More padding to give button a thick shape */
-  background-color: #2c1e14;          /* Deep brown/black background (like Swella) */
-  color: #fff;                        /* White text on the button */
-  font-weight: bold;                  /* Bold text for emphasis */
-  border: none;                       /* No border */
-  border-radius: 2px;                 /* Slightly rounded corners */
-  cursor: pointer;                    /* Cursor changes to pointer on hover */
-  transition: background 0.3s ease;   /* Smooth background color change on hover */
+  padding: 12px 24px;               /* Size of the button */
+  background-color: #2c1e14;        /* Button is dark brown (almost black) */
+  color: #fff;                      /* White text on dark button */
+  font-weight: bold;                /* Bold text for emphasis */
+  border: none;                     /* No default border */
+  border-radius: 2px;               /* Slight rounding */
+  cursor: pointer;                  /* Pointer cursor on hover */
+  transition: background 0.3s ease; /* Smooth background change on hover */
 }
 
 .subscribe-form button:hover {
-  background-color: #5e4c42;          /* Slightly lighter brown on hover */
+  background-color: #5e4c42;        /* Lighter brown on hover */
 }
 
-/* Responsive tweaks for small screens */
+/* === Footer Section === */
+.footer {
+  background-color: #cfd6b4;        /* Sage green background */
+  color: #2c1e14;                   /* Default dark brown text */
+  padding: 40px 30px 20px;          /* Top/bottom/left/right spacing */
+  font-size: 0.95rem;               /* Slightly smaller text size for footer */
+}
+
+.footer-links {
+  display: flex;                    /* Lays out columns side by side */
+  flex-wrap: wrap;                  /* Allows columns to stack on small screens */
+  justify-content: space-between;  /* Spreads them out evenly */
+  margin-bottom: 30px;             /* Space below link section */
+}
+
+.footer-col {
+  display: flex;                    /* Makes each column a vertical stack */
+  flex-direction: column;          
+  gap: 10px;                        /* Space between links */
+  min-width: 150px;                /* Prevents them from collapsing too narrow */
+}
+
+.footer-col a {
+  color: #2c1e14;                   /* Dark brown links */
+  text-decoration: none;           /* Removes underlines */
+  font-weight: 500;                /* Slightly bold text */
+}
+
+.footer-col a:hover {
+  text-decoration: underline;      /* Add underline on hover for visual feedback */
+}
+
+.footer-social {
+  display: flex;                    /* Horizontal layout for icons */
+  gap: 15px;                        /* Space between social icons */
+  margin-bottom: 25px;             /* Space between icons and legal text */
+}
+
+.footer-social img {
+  width: 28px;                      /* Icon size */
+  height: 28px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #999;      /* Top line to separate */
+  padding-top: 15px;               /* Space above legal links */
+  text-align: center;              /* Centered copyright text */
+}
+
+.footer-bottom a {
+  color: #2c1e14;                   /* Link color in bottom footer */
+  text-decoration: underline;      /* Underline legal links */
+  margin: 0 5px;                    /* Space between each link */
+}
+
+/* === Mobile Adjustments === */
 @media (max-width: 768px) {
   .subscribe {
-    flex-direction: column;           /* Stack content vertically instead of side by side */
-    align-items: flex-start;          /* Align children to the left */
+    flex-direction: column;        /* Stack the left and form sections vertically */
+    align-items: flex-start;       /* Align everything to the left */
   }
 
   .subscribe-form {
-    width: 100%;                      /* Make form span full width */
-    justify-content: flex-start;      /* Align items to the left instead of right */
-    flex-direction: column;           /* Stack input and button vertically */
+    width: 100%;                   /* Take full width */
+    flex-direction: column;       /* Stack input and button */
+    align-items: flex-start;      /* Align to left */
   }
 
   .subscribe-form input[type="email"],
   .subscribe-form button {
-    width: 100%;                      /* Make input and button full width on small screens */
+    width: 100%;                   /* Each takes full width */
   }
-}
 
-/* ================== FOOTER SECTION ================== */
-.footer {
-  background-color: #9da27e;     /* Dark brown background */
-  color: white;                  /* White text */
-  padding: 20px;                 /* Inner spacing */
-  display: flex;                 /* Layout left/right footer items */
-  justify-content: space-between;/* Align items left and right */
-  align-items: center;           /* Center vertically */
-  flex-wrap: wrap;               /* Allow stacking on smaller screens */
-}
+  .footer-links {
+    flex-direction: column;       /* Stack footer columns */
+    gap: 20px;                     /* Space between columns */
+  }
 
-.footer a img {
-  height: 24px;                  /* Icon height */
-  margin: 0 10px;                /* Space between social icons */
+  .footer-social {
+    justify-content: flex-start;  /* Align icons to the left */
+  }
 }
 
 /* ================== RESPONSIVE: SHARED MOBILE HEADER STYLING ================== */
