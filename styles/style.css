@@ -25,6 +25,18 @@ body {
   flex-wrap: wrap;
 }
 
+/* Brand logo and name */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.brand-icon {
+  height: 36px;
+  width: auto;
+  margin-right: 10px;
+}
+
 .brand-name {
   font-family: 'Playfair Display', serif;
   font-size: 2.2rem;
@@ -40,7 +52,6 @@ body {
 }
 
 .top-nav a {
-  margin-left: 25px;
   text-decoration: none;
   color: #5e4c42;
   font-weight: 500;
@@ -52,35 +63,32 @@ body {
   color: #a6855e;
 }
 
-.top-btn {
-  margin-left: 20px;
-}
-
 .desktop-nav-right {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 15px;
 }
 
 .btn-schedule {
-  margin-left: 30px;
+  font-family: 'Playfair Display', serif;
   background-color: #6c7a4c;
-  color: #fff;
+  color: white;
   border: none;
-  padding: 6px 10px;
+  padding: 10px 16px;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
-  cursor: pointer;
   border-radius: 4px;
+  cursor: pointer;
   transition: background 0.3s ease;
+  text-decoration: none;
 }
 
 .btn-schedule:hover {
   background-color: #5e4c42;
 }
 
-/* Mobile hamburger */
+/* Hamburger */
 .hamburger {
   display: none;
   font-size: 28px;
@@ -90,6 +98,7 @@ body {
   color: #5e4c42;
 }
 
+/* Mobile nav */
 .mobile-nav-overlay {
   display: none;
   position: fixed;
@@ -116,24 +125,12 @@ body {
   font-weight: bold;
 }
 
-.close-btn {
-  font-size: 2rem;
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  background: none;
-  border: none;
-  color: #5e4c42;
-  cursor: pointer;
-  display: none;
-}
-
 /* Decorative divider */
 .section-divider {
   border-bottom: 30px solid #a98467;
 }
 
-/* Hero section */
+/* Hero */
 .hero {
   display: flex;
   height: 100vh;
@@ -198,7 +195,6 @@ body {
 .splide {
   max-width: 95%;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .splide__track {
@@ -220,14 +216,14 @@ body {
   border-radius: 6px;
   cursor: pointer;
   display: block;
+  transition: transform 0.3s ease;
 }
 
 .splide__slide img:hover {
   transform: scale(1.03);
-  transition: transform 0.3s ease;
 }
 
-/* Splide pagination styling */
+/* Pagination dots */
 .splide__pagination {
   display: flex;
   justify-content: center;
@@ -313,7 +309,7 @@ body {
   margin: 0 10px;
 }
 
-/* Responsive */
+/* Responsive rules */
 @media (max-width: 768px) {
   .top-nav {
     display: none;
@@ -323,8 +319,14 @@ body {
     display: block;
   }
 
-  .close-btn {
-    display: block;
+  .desktop-nav-right {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn-schedule {
+    padding: 8px 14px;
   }
 }
 
