@@ -338,7 +338,7 @@ body {
 
 /* ================== RESPONSIVE: SHARED MOBILE HEADER STYLING ================== */
 .mobile-header-right {
-  display: flex;                 /* Display hamburger and button side by side */
+  display: none;                 /* Display hamburger and button side by side */
   align-items: center;          /* Align items vertically */
   gap: 10px;                     /* Space between them */
 }
@@ -383,6 +383,12 @@ body {
   .btn-schedule {
     font-size: 0.8rem;           /* Smaller font for button */
     padding: 6px 10px;           /* Less padding to save space */
+  }
+
+  .mobile-header-right {
+    display: none;                 /* Display hamburger and button side by side */
+    align-items: center;          /* Align items vertically */
+    gap: 10px;                     /* Space between them */
   }
 
   .mobile-nav-overlay {
