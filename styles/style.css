@@ -52,6 +52,10 @@ body {
   color: #a6855e;
 }
 
+.top-btn {
+  margin-left: 20px;
+}
+
 .desktop-nav-right {
   display: flex;
   align-items: center;
