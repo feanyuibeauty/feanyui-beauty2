@@ -112,60 +112,60 @@
   </section>
 
   
- <!-- === Subscribe Section === -->
+ <!-- === SUBSCRIBE + FOOTER SECTION  === -->
 <section class="subscribe">
-  <!-- Left Column: Headline + Description -->
+  <!-- LEFT SIDE: Brand name + Text + Email form -->
   <div class="subscribe-left">
+    <h2 class="brand-name" style="margin-bottom: 12px;">Feanyui Beauty</h2>
     <h3>Join The Feanyui Beauty Community</h3>
-    <p>Be the first to know about appointments, events, and exclusive care tips.</p>
+    <p>Be the first to know about styles, updates, and exclusive appointments.</p>
+    <form class="subscribe-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
   </div>
 
-  <!-- Right Column: Email form -->
-  <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
-    <input type="email" placeholder="Enter your email" required />
-    <button type="submit">Subscribe</button>
-  </form>
-</section>
-
-<!-- === Footer Section === -->
-<footer class="footer">
-  <!-- Top: Footer Links in 2 columns -->
+  <!-- RIGHT SIDE: Footer Links -->
   <div class="footer-links">
-    <!-- Left column -->
     <div class="footer-col">
       <a href="about.html">About</a>
-      <a href="services.html">Services</a>
       <a href="policies.html">Policies</a>
+      <a href="services.html">Services</a>
     </div>
-
-    <!-- Right column -->
     <div class="footer-col">
       <a href="faq.html">FAQs</a>
       <a href="how-it-works.html">How It Works</a>
       <a href="contact.html">Contact Us</a>
     </div>
   </div>
+</section>
 
-  <!-- Middle: Social icons -->
+<!-- Divider + Social icons row -->
+<div class="footer-social-wrapper">
+  <div class="divider-line"></div>
+
+  <!-- Social Icons -->
   <div class="footer-social">
     <a href="https://www.instagram.com/feanyuibeauty/" target="_blank">
-      <img src="assets/icons/instagram.png" alt="Instagram" />
+      <img src="assets/icons/instagram.png" alt="Instagram">
     </a>
     <a href="https://www.tiktok.com/@feanyui_beauty" target="_blank">
-      <img src="assets/icons/tiktok.png" alt="TikTok" />
+      <img src="assets/icons/tiktok.png" alt="TikTok">
     </a>
     <a href="https://www.facebook.com/people/Feanyui-Beauty-Braiding-Services/61571694180320/" target="_blank">
-      <img src="assets/icons/facebook.png" alt="Facebook" />
+      <img src="assets/icons/facebook.png" alt="Facebook">
     </a>
   </div>
+</div>
 
-  <!-- Bottom: Legal line -->
-  <div class="footer-bottom">
-    © 2025 Feanyui Beauty, Inc. |
-    <a href="privacy.html">Privacy Policy</a> |
+<!-- Legal bottom -->
+<footer class="footer-bottom">
+  <p>© Feanyui Beauty, Inc. | 
+    <a href="privacy-policy.html">Privacy Policy</a> | 
     <a href="terms.html">Terms of Service</a>
-  </div>
+  </p>
 </footer>
+
   
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
