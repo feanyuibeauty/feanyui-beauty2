@@ -316,39 +316,84 @@ body {
 }
 
 /* Responsive rules */
+/* Mobile header right */
+.mobile-header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 @media (max-width: 768px) {
   .top-header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 20px;
   }
 
   .nav-left {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
   }
 
+  .brand-icon {
+    height: 30px;
+  }
+
+  .brand-name {
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+
+  .top-nav,
   .desktop-nav-right {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .top-nav {
-    display: none; /* hide nav links */
-  }
-
-  .btn-schedule {
-    font-size: 0.85rem;
-    padding: 6px 10px;
+    display: none;
   }
 
   .hamburger {
-    font-size: 24px;
-    padding: 4px 10px;
+    display: block;
+    font-size: 26px;
     background: none;
     border: none;
     color: #5e4c42;
+  }
+
+  .btn-schedule {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  .mobile-nav-overlay {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fdfbf9;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 998;
+    border-top: 1px solid #ddd;
+  }
+
+  .mobile-nav-overlay.active {
+    display: flex;
+  }
+
+  .mobile-nav-overlay nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .mobile-nav-overlay nav a {
+    padding: 15px 0;
+    font-size: 1.1rem;
+    color: #5e4c42;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
   }
 }
