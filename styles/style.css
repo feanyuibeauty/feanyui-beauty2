@@ -22,7 +22,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* fix overflow wrap */
+  gap: 15px;
 }
 
 /* Brand logo and name */
@@ -48,7 +49,8 @@ body {
 /* Top nav */
 .top-nav {
   display: flex;
-  gap: 25px;
+  gap: 18px; /* tighten spacing */
+  align-items: center;
 }
 
 .top-nav a {
@@ -66,7 +68,8 @@ body {
 .desktop-nav-right {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 18px; /* tighter spacing */
+  flex-wrap: nowrap;
 }
 
 .btn-schedule {
@@ -82,6 +85,7 @@ body {
   cursor: pointer;
   transition: background 0.3s ease;
   text-decoration: none;
+  white-space: nowrap; /* prevents wrap */
 }
 
 .btn-schedule:hover {
