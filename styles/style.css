@@ -82,9 +82,9 @@ body {
 .btn-schedule {
   font-family: 'Playfair Display', serif; /* Matches brand font */
   background-color: #6c7a4c;              /* Sage green background */
-  color: white;                           /* White text */
+  color: #ebebeb;                           /* White text */
   border: none;                           /* Removes default border */
-  padding: 10px 16px;                     /* Internal spacing of button */
+  padding: 5px 10px;                     /* Internal spacing of button */
   font-size: 1rem;                        /* Button text size */
   text-transform: uppercase;             /* All caps text */
   font-weight: bold;                      /* Bolder font */
@@ -141,7 +141,7 @@ body {
 
 /* Horizontal divider element styling */
 .section-divider {
-  border-bottom: 30px solid #a98467;     /* Thick brown line separator */
+  border-bottom: 12px solid #5e3d09;     /* Thick brown line separator */
 }
 
 /* Hero section (split layout) */
@@ -172,42 +172,42 @@ body {
 
 /* Right side of hero with text/button */
 .hero-right {
-  flex: 1;
-  background-color: #fdfbf9;
+  flex: .5;
+  background-color: #f3e8df;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 40px;
+  padding: 20px;
 }
 
 /* Main heading */
 .hero-right h1 {
-  font-size: 2.8rem;                      /* Large title */
+  font-size: 1.8rem;                      /* Large title */
   font-weight: 700;                       /* Bold */
-  color: #5e4c42;                         /* Brown */
+  color: #5e3d1b;                         /* Brown */
   margin-bottom: 15px;
 }
 
 /* Subtext */
 .hero-right p {
-  font-size: 1.2rem;
+  font-size: .799rem;
   max-width: 540px;
   margin-bottom: 25px;
-  color: #5b4636;
+  color: #5e3d3a;
 }
 
 
 /* ================== GALLERY SECTION ================== */
 .gallery {
   padding: 60px 20px;                /* Adds space above and below, slight padding on sides */
-  background-color: #fdfbf9;         /* Beige background matches hero section */
+  background-color: #f3e8df;         /* Beige background matches hero section */
   text-align: center;                /* Centers all content in the section */
 }
 
 .gallery h2 {
-  font-size: 2rem;                   /* Large heading text for section title */
+  font-size: 1.6rem;                   /* Large heading text for section title */
   margin-bottom: 30px;              /* Space under heading before carousel */
   color: #5e4c42;                    /* Deep brown text color */
 }
@@ -274,7 +274,7 @@ body {
 
 /* ================== REVIEWS SECTION ================== */
 .reviews {
-  background-color: #fff7f2;     /* Soft pink background */
+  background-color: #f3e8df;     /* Soft pink background */
   padding: 60px 20px;            /* Space around content */
   text-align: center;            /* Center all text */
 }
