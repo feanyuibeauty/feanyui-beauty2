@@ -39,6 +39,7 @@ body {
 }
 
 .top-nav a {
+  margin-left: 25px;
   text-decoration: none;
   color: #5e4c42;
   font-weight: 500;
@@ -51,6 +52,7 @@ body {
 }
 
 .btn-schedule {
+  margin-left: 30px;
   background-color: #6c7a4c;
   color: #fff;
   border: none;
