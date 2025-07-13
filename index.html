@@ -14,31 +14,32 @@
 
   <!-- Header -->
   <header class="top-header">
-  <h1 class="brand-name">Feanyui Beauty</h1>
-  <div class="desktop-nav-right">
-    <nav class="top-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="policies.html">Policies</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule top-btn" target="_blank">SCHEDULE NOW</a>
-    <button class="hamburger" onclick="toggleMenu()">☰</button>
-  </div>
-</header>
+    <div class="nav-left">
+      <img src="assets/logo.png" alt="Logo" class="brand-icon" />
+      <h1 class="brand-name">Feanyui Beauty</h1>
+    </div>
 
+    <div class="nav-right">
+      <nav class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="policies.html">Policies</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule top-btn" target="_blank">SCHEDULE NOW</a>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
 
   <!-- Mobile Menu -->
   <div id="mobileNav" class="mobile-nav-overlay">
-    <button class="close-btn" onclick="toggleMenu()">×</button>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="policies.html">Policies</a>
       <a href="contact.html">Contact</a>
-      <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule" target="_blank">SCHEDULE NOW</a>
     </nav>
   </div>
 
@@ -68,7 +69,7 @@
     <p style="max-width: 800px; margin: 0 auto 20px; font-size: 1.1rem; line-height: 1.6;">
       At Feanyui Beauty, every braid tells a story — yours. Rooted in care and culture, we honor your time, your hair health, and your confidence. We create effortlessly bold looks that protect your crown and speak to your unique beauty.
     </p>
-    <a href="#" style="font-weight: bold; color: #6c7a4c; text-decoration: underline;">Learn More</a>
+    <a href="#">Learn More</a>
   </section>
 
   <!-- Gallery Section -->
@@ -123,9 +124,13 @@
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
   <script>
     function toggleMenu() {
-      document.getElementById("mobileNav").classList.toggle("active");
+      const nav = document.getElementById("mobileNav");
+      const burger = document.getElementById("hamburger");
+      nav.classList.toggle("active");
+      burger.textContent = nav.classList.contains("active") ? "×" : "☰";
     }
 
     document.addEventListener('DOMContentLoaded', function () {
@@ -144,21 +149,15 @@
           480: { perPage: 2 }
         }
       }).mount();
-    });
-  </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.splide__slide img').forEach(img => {
-      img.addEventListener('click', () => {
-        basicLightbox.create(`
-          <img src="${img.src}" style="max-width: 90vw; max-height: 90vh;" />
-        `).show();
+      // Lightbox for gallery
+      document.querySelectorAll('.splide__slide img').forEach(img => {
+        img.addEventListener('click', () => {
+          basicLightbox.create(`<img src="${img.src}" style="max-width: 90vw; max-height: 90vh;" />`).show();
+        });
       });
     });
-  });
-</script>
+  </script>
 
 </body>
 </html>
