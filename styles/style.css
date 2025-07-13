@@ -209,6 +209,11 @@ body {
   display: block;
 }
 
+.splide__slide img:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
 /* Splide pagination styling */
 .splide__pagination {
   display: flex;
