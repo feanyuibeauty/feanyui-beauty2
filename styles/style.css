@@ -291,21 +291,31 @@ body {
 }
 
 /* === Subscribe + Footer Layout === */
-.subscribe-footer-wrapper {
+/*.subscribe-footer-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;        /* Two even columns */
-  gap: 60px;                             /* Space between left and right blocks */
-  padding: 60px 40px 30px;
-  background-color: #cfd6b4;            /* Feanyui sage green */
-  color: #2c1e14;
+  /*gap: 60px;                             /* Space between left and right blocks */
+ /* padding: 60px 40px 30px;
+ /* background-color: #cfd6b4;            /* Feanyui sage green */
+/*  color: #2c1e14;
+} */
+.subscribe-footer-wrapper {
+  display: flex;                    /* switch to flex instead of grid */
+  justify-content: space-between;  /* spread left and right */
+  align-items: flex-start;         /* top-align both sides */
+  padding: 60px 30px;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 /* === LEFT SIDE: Brand + Text + Form === */
 .subscribe-left-block {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
+  margin-top: 0;
 }
+
 
 .footer-brand {
   font-family: 'Playfair Display', serif;
@@ -334,11 +344,11 @@ body {
 }
 
 .subscribe-form input[type="email"] {
-  padding: 12px 15px;
-  font-size: 0.9rem;
+  padding: 9px 12px;
+  font-size: 0.83rem;
   flex: 1;
   min-width: 250px;
-  max-width: 500px;
+  max-width: 300px;
   background: #fff;
   border: 1px solid #2c1e14;
   border-radius: 3px;
@@ -346,13 +356,13 @@ body {
 }
 
 .subscribe-form button {
-  padding: 12px 24px;
+  padding: 9px 18px;
   background-color: #2c1e14;
   color: #fff;
   font-weight: bold;
   border: none;
   border-radius: 3px;
-  font-size: 0.9rem;
+  font-size: 0.83em;
   cursor: pointer;
   transition: background 0.3s ease;
   white-space: nowrap;
