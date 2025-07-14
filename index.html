@@ -112,57 +112,53 @@
   </section>
 
   
- <!-- === SUBSCRIBE + FOOTER (Swella-style) === -->
-<section class="subscribe">
-  <!-- LEFT SIDE -->
-  <div class="subscribe-left">
-    <h2 class="brand-name" style="margin-bottom: 12px;">Feanyui Beauty</h2>
-    <h3>Join The Feanyui Beauty Community</h3>
-    <p>Be the first to know about styles, updates, and exclusive appointments.</p>
-    <form class="subscribe-form">
-      <input type="email" placeholder="Enter your email" required />
+<!-- === Subscribe + Footer Section === -->
+<section class="subscribe-footer-wrapper">
+  <!-- LEFT SIDE: Brand + Headline + Subtext + Subscribe form -->
+  <div class="subscribe-left-block">
+    <h2 class="footer-brand">Feanyui Beauty</h2>
+    <h3 class="footer-headline">Join the Feanyui Beauty Community</h3>
+    <p class="footer-subtext">Be the first to know about styles, updates, and exclusive appointments.</p>
+
+    <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+      <input type="email" placeholder="Email Address" required />
       <button type="submit">Subscribe</button>
     </form>
   </div>
 
-  <!-- RIGHT SIDE LINKS -->
-  <div class="footer-links">
-    <div class="footer-col">
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="policies.html">Policies</a>
+  <!-- RIGHT SIDE: 2 columns of nav links -->
+  <div class="subscribe-right-block">
+    <div class="footer-links">
+      <div class="footer-col">
+        <a href="about.html">About</a>
+        <a href="faqs.html">FAQs</a>
+      </div>
+      <div class="footer-col">
+        <a href="services.html">Services</a>
+        <a href="how-it-works.html">How It Works</a>
+      </div>
+      <div class="footer-col">
+        <a href="policies.html">Policies</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
     </div>
-    <div class="footer-col">
-      <a href="faq.html">FAQs</a>
-      <a href="how-it-works.html">How It Works</a>
-      <a href="contact.html">Contact Us</a>
+
+    <!-- Divider line aligned with email field -->
+    <hr class="footer-divider" />
+
+    <!-- Social Icons -->
+    <div class="footer-social">
+      <a href="https://www.instagram.com/feanyuibeauty/" target="_blank"><img src="assets/icons/instagram.png" alt="Instagram" /></a>
+      <a href="https://www.tiktok.com/@feanyui_beauty" target="_blank"><img src="assets/icons/tiktok.png" alt="TikTok" /></a>
+      <a href="https://www.facebook.com/people/Feanyui-Beauty-Braiding-Services/61571694180320/" target="_blank"><img src="assets/icons/facebook.png" alt="Facebook" /></a>
     </div>
+  </div>
+
+  <!-- Bottom legal row centered -->
+  <div class="footer-bottom">
+    © Feanyui Beauty, Inc. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms</a>
   </div>
 </section>
-
-<!-- Divider + Socials -->
-<div class="footer-divider-social">
-  <div class="divider-line"></div>
-  <div class="footer-social">
-    <a href="https://www.instagram.com/feanyuibeauty/" target="_blank">
-      <img src="assets/icons/instagram.png" alt="Instagram">
-    </a>
-    <a href="https://www.tiktok.com/@feanyui_beauty" target="_blank">
-      <img src="assets/icons/tiktok.png" alt="TikTok">
-    </a>
-    <a href="https://www.facebook.com/people/Feanyui-Beauty-Braiding-Services/61571694180320/" target="_blank">
-      <img src="assets/icons/facebook.png" alt="Facebook">
-    </a>
-  </div>
-</div>
-
-<!-- Legal Bottom -->
-<footer class="footer-bottom">
-  <p>© Feanyui Beauty, Inc. |
-    <a href="privacy-policy.html">Privacy Policy</a> |
-    <a href="terms.html">Terms of Service</a>
-  </p>
-</footer>
 
   
   <!-- Scripts -->
