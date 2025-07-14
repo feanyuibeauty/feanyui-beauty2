@@ -340,6 +340,7 @@ body {
   background: #fff;
   flex: 1;
   min-width: 180px;
+  max-width: 500px;
 }
 
 .subscribe-form button {
@@ -404,6 +405,19 @@ body {
   border-top: 1px solid #999;
   margin: 10px 0;
   width: 100%;
+}
+
+.divider-line {
+  width: 100%;
+  max-width: 500px;          /* ✅ match email field width */
+  height: 1px;
+  background-color: #2c1e14;
+  margin: 30px 0 20px auto;  /* ✅ push to right using auto left margin */
+}
+
+.divider-wrapper {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Socials Row */
