@@ -290,165 +290,158 @@ body {
   font-style: italic;           /* Adds emphasis to the quote */
 }
 
-/* ================== SUBSCRIBE SECTION ================== */
-/* === Subscribe Section (Swella-Inspired Layout) === */
-.subscribe {
-  display: flex;                          /* Use flexbox to arrange content side by side */
-  flex-wrap: wrap;                        /* Allow items to wrap to next line on small screens */
-  justify-content: space-between;        /* Space out the left and right sections */
-  align-items: flex-start;               /* Align items to the top */
-  background-color: #E9CCED;             /* Sage green background for Feanyui theme */
-  padding: 60px 30px;                    /* Add space inside the container (top/bottom 60px, sides 30px) */
-  gap: 30px;                              /* Space between the two columns */
-  color: #2c1e14;                        /* Text color (dark brown) */
+/* === Subscribe + Footer Wrapper === */
+.subscribe-footer-wrapper {
+  background-color: #cfd6b4;  /* Sage green background */
+  padding: 60px 30px 40px;
+  color: #2c1e14;
+  display: grid;              /* Use CSS Grid for 2-column control */
+  grid-template-columns: 1fr 1fr;  /* Two equal columns */
+  gap: 40px;
 }
 
-.subscribe-left {
-  flex: 1;                                /* Left section takes up equal width */
-  min-width: 250px;                       /* Don’t let it shrink below 250px */
+/* === LEFT SIDE (Brand + Form) === */
+.subscribe-left-block {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.subscribe-left h3 {
-  font-size: 1.6rem;                      /* Large headline size */
-  font-weight: 700;                       /* Bold text */
-  margin-bottom: 10px;                    /* Space below the heading */
-  color: #2c1e14;                        /* Heading text color */
+.footer-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
-.subscribe-left p {
-  font-size: 1rem;                        /* Paragraph text size */
-  line-height: 1.5;                       /* Line spacing for better readability */
-  color: #2c1e14;                        /* Paragraph text color */
+.footer-headline {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.footer-subtext {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 
 .subscribe-form {
-  display: flex;                          /* Arrange email input and button horizontally */
-  flex: 1;                                /* Allow this section to grow equally */
-  justify-content: flex-end;             /* Push form elements to the right */
-  min-width: 280px;                       /* Prevent form from becoming too narrow */
-  gap: 10px;                              /* Space between input and button */
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .subscribe-form input[type="email"] {
-  flex: 1;                                /* Input takes up available space */
-  padding: 12px 15px;                     /* Space inside the input field */
-  font-size: 1rem;                        /* Standard readable size */
-  border: 1px solid #2c1e14;             /* Thin brown border */
-  border-radius: 2px;                     /* Slightly rounded corners */
-  background: #fff;                       /* White background */
-  outline: none;                          /* Removes browser blue outline when focused */
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #2c1e14;
+  border-radius: 3px;
+  background: #fff;
+  flex: 1;
+  min-width: 180px;
 }
 
 .subscribe-form button {
-  padding: 12px 24px;                     /* Inner space of button */
-  background-color: #2c1e14;             /* Dark brown background */
-  color: #fff;                            /* White text */
-  font-weight: bold;                      /* Bold label */
-  border: none;                           /* No border */
-  border-radius: 2px;                     /* Slight corner rounding */
-  cursor: pointer;                        /* Cursor changes to hand on hover */
-  transition: background 0.3s ease;       /* Smooth background change on hover */
+  padding: 12px 24px;
+  background-color: #2c1e14;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  white-space: nowrap;
 }
 
 .subscribe-form button:hover {
-  background-color: #5e4c42;             /* Lighter brown on hover */
+  background-color: #5e4c42;
 }
 
-
-/* === Footer Section (Swella-Inspired Layout) === */
-.footer {
-  background-color: #D6B8E6;             /* Sage green background to match subscribe section */
-  color: #2c1e14;                        /* Default text color */
-  padding: 40px 30px 20px;               /* Top 40px, sides 30px, bottom 20px padding */
-  font-size: 0.95rem;                    /* Slightly smaller font for footer */
+/* === RIGHT SIDE (Links + Divider + Socials) === */
+.subscribe-right-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 25px;
 }
 
+/* Link columns */
 .footer-links {
-  display: flex;                          /* Arrange link columns side by side */
-  flex-wrap: wrap;                        /* Wrap columns on small screens */
-  justify-content: space-between;        /* Push left and right columns to opposite sides */
-  margin-bottom: 30px;                   /* Space below link area */
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* 2 columns */
+  gap: 20px 60px;
 }
 
 .footer-col {
-  display: flex;                          /* Arrange links in a vertical column */
+  display: flex;
   flex-direction: column;
-  gap: 10px;                              /* Space between links */
-  min-width: 150px;                       /* Each column must be at least 150px wide */
+  gap: 10px;
 }
 
 .footer-col a {
-  color: #2c1e14;                        /* Link text color */
-  text-decoration: none;                 /* Remove underlines by default */
-  font-weight: 500;                       /* Medium boldness for links */
+  color: #2c1e14;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .footer-col a:hover {
-  text-decoration: underline;            /* Underline on hover for clarity */
+  text-decoration: underline;
 }
 
+/* Divider aligned with email form */
+.footer-divider {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 10px 0;
+  width: 100%;
+}
+
+/* Socials Row */
 .footer-social {
-  display: flex;                          /* Arrange icons in a row */
-  gap: 15px;                              /* Space between icons */
-  justify-content: center;               /* Center icons horizontally */
-  margin-bottom: 25px;                   /* Space below social icons before legal */
+  display: flex;
+  gap: 15px;
 }
 
 .footer-social img {
-  width: 28px;                            /* Size of each icon */
-  height: 28px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
 }
 
+/* Legal line centered at bottom */
 .footer-bottom {
-  border-top: 1px solid #999;            /* Thin top line to separate content */
-  padding-top: 15px;                     /* Space above the text */
-  text-align: center;                    /* Center the copyright text */
+  grid-column: span 2; /* Stretch across both columns */
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid #999;
+  font-size: 0.9rem;
 }
 
 .footer-bottom a {
-  color: #2c1e14;                        /* Link color matches brand */
-  text-decoration: underline;            /* Underlined links for legal text */
-  margin: 0 5px;                          /* Small space between legal links */
+  color: #2c1e14;
+  text-decoration: underline;
+  margin: 0 5px;
 }
 
-.footer-divider-social {
-  background-color: #cfd6b4;
-  padding: 20px 30px;
-}
 
-.divider-line {
-  width: 100%;
-  max-width: 1000px;
-  height: 1px;
-  background-color: #2c1e14;
-  margin: 30px auto 25px;
-}
-
-/* === Mobile Responsive Adjustments === */
-@media (max-width: 768px) {
-  .subscribe {
-    flex-direction: column;              /* Stack subscribe sections vertically */
-    align-items: flex-start;             /* Align to the left side */
-  }
-
+@media (max-width: 500px) {
   .subscribe-form {
-    width: 100%;                         /* Full width form container */
-    flex-direction: column;              /* Stack input and button vertically */
-    align-items: flex-start;             /* Align to left edge */
+    flex-direction: column;
   }
 
-  .subscribe-form input[type="email"],
+  .subscribe-form input,
   .subscribe-form button {
-    width: 100%;                         /* Input and button stretch full width */
+    width: 100%;
   }
 
   .footer-links {
-    flex-direction: column;              /* Stack link columns vertically */
-    gap: 20px;                           /* Space between each column */
+    grid-template-columns: 1fr 1fr; /* still keep two columns on narrow screens */
+    column-gap: 30px;
   }
 
   .footer-social {
-    justify-content: flex-start;         /* Align social icons to the left */
+    flex-wrap: wrap;
   }
 }
 
