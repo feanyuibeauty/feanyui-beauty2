@@ -293,7 +293,7 @@ body {
 /* === Subscribe + Footer Wrapper === */
 .subscribe-footer-wrapper {
   background-color: #cfd6b4;  /* Sage green background */
-  padding: 60px 30px 40px;
+  padding: 20px 20px 20px;
   color: #2c1e14;
   display: grid;              /* Use CSS Grid for 2-column control */
   grid-template-columns: 1fr 1fr;  /* Two equal columns */
