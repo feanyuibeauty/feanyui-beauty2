@@ -378,6 +378,8 @@ body {
   display: grid;
   grid-template-columns: repeat(2, auto); /* 2 columns */
   gap: 20px 60px;
+  margin-bottom: 30px;
+  margin-top: 25px;
 }
 
 .footer-col {
