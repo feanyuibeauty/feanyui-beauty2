@@ -368,6 +368,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   gap: 25px;
+  padding-right: 0;
+  margin-right: 0;
 }
 
 /* Links */
