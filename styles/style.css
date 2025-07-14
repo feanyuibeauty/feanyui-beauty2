@@ -449,7 +449,7 @@ body {
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .subscribe-footer-wrapper {
     flex-direction: column;
     padding: 40px 20px;
@@ -472,7 +472,32 @@ body {
   .divider-wrapper {
     justify-content: flex-start;
   }
+}*/
+@media (max-width: 768px) {
+  .subscribe-footer-wrapper {
+    padding: 40px 20px; /* Only reduce padding for smaller screens */
+  }
+
+  /* Keep form layout same, just reduce spacing slightly */
+  .subscribe-form input[type="email"] {
+    max-width: 280px;  /* Optional: scale input size for mobile if needed */
+  }
+
+  .subscribe-form button {
+    padding: 9px 16px;
+  }
+
+  .divider-wrapper {
+    justify-content: flex-end;
+  }
+
+  .footer-social {
+    justify-content: flex-end;
+  }
 }
+
+
+
 
 
 /* ================== RESPONSIVE: SHARED MOBILE HEADER STYLING ================== */
