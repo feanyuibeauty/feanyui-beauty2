@@ -360,12 +360,18 @@ body {
 }
 
 /* === RIGHT SIDE (Links + Divider + Socials) === */
-.subscribe-right-block {
+/*.subscribe-right-block {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 25px;
+}*/
+.subscribe-right-block {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 1fr)); /* tweak 120px wider/narrower */
+  gap: 30px 60px; /* row gap (vertical), column gap (horizontal) */
 }
+
 
 /* Link columns */
 .footer-links {
