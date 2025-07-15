@@ -589,7 +589,7 @@ body {
     display: none;               /* Hidden by default */
     flex-direction: column;
     align-items: center;
-    background-color: #402204;   /* Match site background */
+    background-color: #debfa9;   /* Match site background */
     position: fixed;
     top: 0px;                   /* Appears just below header */
     left: 0;
