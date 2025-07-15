@@ -305,7 +305,7 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
   background-color: #cfd6b4;
-  padding: 60px 2vw 30px;
+  padding: 10px 5vw 10px;
   color: #2c1e14;
   gap: 20px;
 }
@@ -324,7 +324,7 @@ body {
   font-size: 1.7rem;
   font-weight: 200;
   margin-bottom: 35px;
-  margin-top: -50px;
+  margin-top: -10px;
 }
 
 .footer-headline {
