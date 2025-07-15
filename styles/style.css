@@ -552,16 +552,16 @@ body {
   .subscribe-right-block {
     align-items: center;
     text-align: center;
-  }*/
+  }
 
   .footer-links {
     justify-content: center;
     text-align: center; /* Optional: switch to center if you want links centered */
   }
-/
+
   .divider-wrapper {
     justify-content: center; /* Center the line */
-/  }
+  }
 
   .footer-social {
     justify-content: center;
