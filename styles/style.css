@@ -510,7 +510,7 @@ body {
 
   .footer-links {
     justify-content: center;
-    text-align: left; /* Optional: switch to center if you want links centered */
+    text-align: center; /* Optional: switch to center if you want links centered */
   }
 
   .divider-wrapper {
