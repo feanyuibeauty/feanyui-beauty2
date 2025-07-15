@@ -476,7 +476,7 @@ body {
 @media (max-width: 768px) {
   .subscribe-footer-wrapper {
     padding: 40px 20px; /* Only reduce padding for smaller screens */
-  }
+ /*}
 
   /* Keep form layout same, just reduce spacing slightly */
   /*.subscribe-form input[type="email"] {*/
