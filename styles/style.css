@@ -628,8 +628,8 @@ body {
 /* ================== RESPONSIVE: SHARED MOBILE HEADER STYLING ================== */
 .mobile-header-right {
   display: none;                 /* Display hamburger and button side by side */
-  align-items: center;          /* Align items vertically */
-  gap: 10px;                     /* Space between them */
+ /* align-items: center;           Align items vertically */
+ /* gap: 10px;                      Space between them */
 }
 
 /* ================== MOBILE STYLES FOR SMALL SCREENS ================== */
