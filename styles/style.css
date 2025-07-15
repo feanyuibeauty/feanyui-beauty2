@@ -225,7 +225,13 @@ body {
   max-width: 280px;
 }
 
-.mission-img-left img,
+.mission-img-left img {
+  width: 200%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 .mission-img-right img {
   width: 100%;
   height: auto;
