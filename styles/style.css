@@ -198,6 +198,87 @@ body {
   color: #5e3d3a;
 }
 
+/* ======= Meet Feanyui Section ======= */
+.mission-section {
+  background: #f3e8df;
+  padding: 60px 30px;
+}
+
+.mission-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.mission-img-left,
+.mission-img-right {
+  flex: 1;
+  min-width: 200px;
+  max-width: 280px;
+}
+
+.mission-img-left img,
+.mission-img-right img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.mission-text {
+  flex: 2;
+  max-width: 600px;
+  text-align: center;
+}
+
+.mission-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #5e3d1b;
+}
+
+.mission-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #5e3d3a;
+}
+
+.mission-text a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #2c1e14;
+}
+
+/* ======= Responsive: Stack Images Above Text on Mobile ======= */
+@media (max-width: 768px) {
+  .mission-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mission-img-left,
+  .mission-img-right {
+    max-width: 90%;
+  }
+
+  .mission-text {
+    order: 3;
+    padding-top: 20px;
+  }
+
+  .mission-img-left {
+    order: 1;
+  }
+
+  .mission-img-right {
+    order: 2;
+    margin-top: -30px; /* Overlap slightly for collage effect */
+  }
+}
 
 /* ================== GALLERY SECTION ================== */
 .gallery {
