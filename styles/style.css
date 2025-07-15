@@ -206,30 +206,29 @@ body {
 
 .mission-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 20px;
   flex-wrap: nowrap;
 }
 
-.mission-img-left
-{
+/* Left image box - scale slightly larger */
+.mission-img-left {
   flex: 1;
-  min-width: 200px;
-  max-width: 280px;
-}
-
-.mission-img-right {
-  flex: 1;
-  min-width: 200px;
-  max-width: 280px;
+  max-width: 320px;     /* Slightly larger than right */
 }
 
 .mission-img-left img {
-  width: 200%;
+  width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
+}
+
+/* Right image box - default size */
+.mission-img-right {
+  flex: 1;
+  max-width: 280px;
 }
 
 .mission-img-right img {
@@ -239,6 +238,7 @@ body {
   border-radius: 10px;
 }
 
+/* Text section centered between or under images */
 .mission-text {
   flex: 2;
   max-width: 600px;
@@ -264,34 +264,30 @@ body {
   color: #2c1e14;
 }
 
-/* ======= Responsive: Stack Images Above Text on Mobile ======= */
+/* === Mobile view: Keep side-by-side with scale === */
 @media (max-width: 768px) {
   .mission-wrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .mission-img-left{
-    max-width: 55%;
-  }
-  
-  .mission-img-right {
-    max-width: 40%;
-  }
-
-  .mission-text {
-    order: 3;
-    padding-top: 20px;
+    flex-direction: row;              /* Prevent stacking */
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: nowrap;
   }
 
   .mission-img-left {
-    order: 1;
+    width: 55vw;
+    max-width: none;
   }
 
   .mission-img-right {
-    order: 2;
-    margin-top: -30px; /* Overlap slightly for collage effect */
+    width: 45vw;
+    max-width: none;
+  }
+
+  .mission-text {
+    flex-basis: 100%;
+    padding-top: 30px;
+    order: 3;
   }
 }
 
