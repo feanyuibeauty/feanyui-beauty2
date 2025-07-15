@@ -266,9 +266,12 @@ body {
     text-align: center;
   }
 
-  .mission-img-left,
+  .mission-img-left{
+    max-width: 55%;
+  }
+  
   .mission-img-right {
-    max-width: 90%;
+    max-width: 40%;
   }
 
   .mission-text {
