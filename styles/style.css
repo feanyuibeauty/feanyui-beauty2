@@ -495,11 +495,11 @@ body {
     justify-content: flex-end;
   }
 }
-*/
+
 @media (max-width: 768px) {
   .subscribe-footer-wrapper {
     justify-content: center; /* Center everything */
-    align-items: center;
+  /*  align-items: center;
   }
 
   .subscribe-left-block,
@@ -511,11 +511,11 @@ body {
   .footer-links {
     justify-content: center;
     text-align: center; /* Optional: switch to center if you want links centered */
-  }
+ /* }
 
   .divider-wrapper {
     justify-content: center; /* Center the line */
-  }
+  /*}
 
   .footer-social {
     justify-content: center;
@@ -523,6 +523,45 @@ body {
 
   .footer-bottom {
     text-align: center;
+  }
+}*/
+@media (max-width: 768px) {
+  .subscribe-footer-wrapper {
+    flex-direction: row;            /* Keep horizontal layout */
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;                /* allow wrapping if screen gets tight */
+    padding: 40px 5vw;
+  }
+
+  .subscribe-left-block,
+  .subscribe-right-block {
+    flex: 1;
+    min-width: 280px;              /* prevent squishing */
+  }
+
+  .subscribe-form {
+    flex-direction: row;           /* Keep email + button side-by-side */
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    width: auto;                   /* Prevent full-width fields */
+  }
+
+  .divider-wrapper {
+    justify-content: flex-end;     /* Keep divider on right */
+  }
+
+  .footer-social {
+    justify-content: flex-end;     /* Keep social icons under divider */
+  }
+
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
   }
 }
 
