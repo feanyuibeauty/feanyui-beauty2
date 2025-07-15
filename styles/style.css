@@ -118,7 +118,7 @@ body {
   left: 0;                                /* Starts at left */
   width: 100%;                            /* Full screen width */
   height: 100%;                           /* Full screen height */
-  background-color: none;             /* Light beige background for menu */
+  background-color: #debfa9;             /* Light beige background for menu */
   flex-direction: column;                /* Vertically stacks menu items */
   justify-content: center;               /* Centers items vertically */
   align-items: center;                   /* Centers items horizontally */
