@@ -206,16 +206,23 @@ body {
 
 .mission-wrapper {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   gap: 20px;
   flex-wrap: nowrap;
 }
 
-/* Left image box - scale slightly larger */
-.mission-img-left {
+.mission-img-left
+{
   flex: 1;
-  max-width: 320px;     /* Slightly larger than right */
+  min-width: 200px;
+  max-width: 280px;
+}
+
+.mission-img-right {
+  flex: 1;
+  min-width: 200px;
+  max-width: 280px;
 }
 
 .mission-img-left img {
@@ -264,30 +271,36 @@ body {
   color: #2c1e14;
 }
 
-/* === Mobile view: Keep side-by-side with scale === */
+/* ======= Responsive: Stack Images Above Text on Mobile ======= */
 @media (max-width: 768px) {
   .mission-wrapper {
-    flex-direction: row;              /* Prevent stacking */
-    align-items: flex-start;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .mission-img-left {
-    width: 55vw;
-    max-width: none;
+  .mission-img-left{
+    max-width: 55%;
   }
 
   .mission-img-right {
-    width: 45vw;
-    max-width: none;
+    max-width: 40%;
   }
 
   .mission-text {
     flex-basis: 100%;
     padding-top: 30px;
     order: 3;
+    padding-top: 20px;
+  }
+
+  .mission-img-left {
+    order: 1;
+  }
+
+  .mission-img-right {
+    order: 2;
+    margin-top: -30px; /* Overlap slightly for collage effect */
   }
 }
 
@@ -658,7 +671,7 @@ body {
   }
 
   .mobile-header-right {
-    display: none;                 /* Display hamburger and button side by side */
+    display: flex;                 /* Display hamburger and button side by side */
     align-items: center;          /* Align items vertically */
     gap: 10px;                     /* Space between them */
   }
