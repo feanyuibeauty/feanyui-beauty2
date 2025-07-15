@@ -658,7 +658,7 @@ body {
   }
 
   .mobile-header-right {
-    display: flex;                 /* Display hamburger and button side by side */
+    display: none;                 /* Display hamburger and button side by side */
     align-items: center;          /* Align items vertically */
     gap: 10px;                     /* Space between them */
   }
