@@ -208,11 +208,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
-.mission-img-left,
+.mission-img-left
+{
+  flex: 1;
+  min-width: 200px;
+  max-width: 280px;
+}
+
 .mission-img-right {
   flex: 1;
   min-width: 200px;
