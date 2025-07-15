@@ -488,7 +488,7 @@ body {
 
   .divider-line {
     width: 100%;
-    max-width: 300px;
+    max-width: 600px;
     height: 1px;
     background-color: #2c1e14;
     margin: 20px 0 10px 0;
@@ -497,7 +497,7 @@ body {
   /* Social icons row */
   .footer-social {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 15px;
     margin-top: 0;
   }
