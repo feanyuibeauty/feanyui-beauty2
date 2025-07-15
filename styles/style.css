@@ -95,10 +95,7 @@ body {
   white-space: nowrap;                   /* Keeps button text in one line */
 }
 
-.btn-schedule& {
-        display: none;
-    }
-}
+
 /* Hover state for Schedule Now button */
 .btn-schedule:hover {
   background-color: #5e4c42;              /* Changes to darker brown when hovered */
