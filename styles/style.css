@@ -107,7 +107,7 @@ body {
   cursor: pointer;                        /* Hand cursor on hover */
   background: none;                       /* Removes any background color */
   border: none;                           /* Removes border */
-  color: #5e4c42;                         /* Icon color */
+  color: #332313;                         /* Icon color */
 }
 
 /* Mobile menu full screen overlay (hidden by default) */
@@ -610,7 +610,7 @@ body {
     font-size: 26px;             /* Slightly smaller than desktop */
     background: none;            /* No background */
     border: none;                /* No border */
-    color: #debfa9;              /* Brown color */
+    color: #332313;              /* Brown color */
   }
 
   .btn-schedule {
