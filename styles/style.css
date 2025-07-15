@@ -449,7 +449,7 @@ body {
 }
 
 /* RESPONSIVE */
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
   .subscribe-footer-wrapper {
     flex-direction: column;
     padding: 40px 20px;
@@ -476,12 +476,12 @@ body {
 @media (max-width: 768px) {
   .subscribe-footer-wrapper {
     padding: 40px 20px; /* Only reduce padding for smaller screens */
- /*}
+ }
 
   /* Keep form layout same, just reduce spacing slightly */
-  /*.subscribe-form input[type="email"] {*/
-  /*  max-width: 280px;  /* Optional: scale input size for mobile if needed */
-/*  }
+  .subscribe-form input[type="email"] {*/
+    max-width: 280px;  /* Optional: scale input size for mobile if needed */
+  }
 
   .subscribe-form button {
     padding: 9px 16px;
@@ -495,27 +495,27 @@ body {
     justify-content: flex-end;
   }
 }
-
+/*
 @media (max-width: 768px) {
   .subscribe-footer-wrapper {
     justify-content: center; /* Center everything */
-  /*  align-items: center;
+ /*  align-items: center;
   }
 
   .subscribe-left-block,
   .subscribe-right-block {
     align-items: center;
     text-align: center;
-  }
-
+  }*/
+/*
   .footer-links {
     justify-content: center;
     text-align: center; /* Optional: switch to center if you want links centered */
- /* }
-
+  }
+/*
   .divider-wrapper {
     justify-content: center; /* Center the line */
-  /*}
+/*  }
 
   .footer-social {
     justify-content: center;
@@ -524,59 +524,9 @@ body {
   .footer-bottom {
     text-align: center;
   }
-}*/
-@media (max-width: 768px) {
-  .subscribe-footer-wrapper {
-    display: flex;
-    flex-direction: row;              /* 🟢 Keep row layout */
-    justify-content: space-between;  /* 🟢 Spread left/right */
-    align-items: flex-start;
-    gap: 20px;
-    flex-wrap: nowrap;               /* 🛑 Prevent vertical stacking */
-    padding: 40px 5vw;
-  }
-
-  .subscribe-left-block,
-  .subscribe-right-block {
-    flex: 1 1 0;
-    min-width: 300px;
-  }
-
-  /* Email + Subscribe in a row */
-  .subscribe-form {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-
-  .subscribe-form input[type="email"] {
-    width: 100%;
-    max-width: 280px;
-    padding: 6px 12px;
-    font-size: 0.75rem;
-  }
-
-  .subscribe-form button {
-    padding: 6px 15px;
-    font-size: 0.75rem;
-    font-weight: bold;
-    white-space: nowrap;
-  }
-
-  /* Links grid: 2x3 format */
-  .footer-links {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 14px 25px;
-    margin-bottom: 15px;
-  }
-
-  .footer-col {
-    gap: 8px;
-  }
-
+}
+*/
+ 
   /* Divider under links (aligned left or center-right) */
   .divider-wrapper {
     justify-content: flex-end;
