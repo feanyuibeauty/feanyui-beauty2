@@ -472,16 +472,16 @@ body {
   .divider-wrapper {
     justify-content: flex-start;
   }
-}*/
+}
 @media (max-width: 768px) {
   .subscribe-footer-wrapper {
     padding: 40px 20px; /* Only reduce padding for smaller screens */
   }
 
   /* Keep form layout same, just reduce spacing slightly */
-  .subscribe-form input[type="email"] {
-    max-width: 280px;  /* Optional: scale input size for mobile if needed */
-  }
+  /*.subscribe-form input[type="email"] {*/
+  /*  max-width: 280px;  /* Optional: scale input size for mobile if needed */
+/*  }
 
   .subscribe-form button {
     padding: 9px 16px;
@@ -493,6 +493,36 @@ body {
 
   .footer-social {
     justify-content: flex-end;
+  }
+}
+*/
+@media (max-width: 768px) {
+  .subscribe-footer-wrapper {
+    justify-content: center; /* Center everything */
+    align-items: center;
+  }
+
+  .subscribe-left-block,
+  .subscribe-right-block {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+    text-align: left; /* Optional: switch to center if you want links centered */
+  }
+
+  .divider-wrapper {
+    justify-content: center; /* Center the line */
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    text-align: center;
   }
 }
 
