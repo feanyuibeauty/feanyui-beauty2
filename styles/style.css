@@ -533,7 +533,7 @@ body {
     align-items: flex-start;
     gap: 20px;
     flex-wrap: nowrap;               /* 🛑 Prevent vertical stacking */
-    padding: 20px 2vw;
+    padding: 40px 5vw;
   }
 
   .subscribe-left-block,
