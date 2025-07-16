@@ -729,7 +729,7 @@ body {
 /* ========== MISSION SECTION: MOBILE COLLAGE FIX ========== */
 @media (max-width: 768px) {
   .mission-wrapper {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     gap: 10px;
