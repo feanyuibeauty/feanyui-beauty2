@@ -735,10 +735,14 @@ body {
     gap: 30px;
   }
 
-  .mission-img-left,
+  .mission-img-left{
+    flex: 0 0 45%;
+    width: 85%;
+  }
+  
   .mission-img-right {
     flex: 0 0 45%;
-    max-width: 45%;
+    width: 95%;
   }
 
   .mission-text {
