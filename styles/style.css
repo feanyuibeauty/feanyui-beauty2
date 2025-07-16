@@ -261,60 +261,35 @@ body {
   .mission-wrapper {
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  /* New: nested flex container for just the images */
-  .mission-images-row {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    width: 100%;
-    flex-wrap: nowrap;
-    margin-bottom: 20px;
+    align-items: center;
   }
 
   .mission-img-left {
-    flex: 1;
-    max-width: 75%;
+    display: inline-block;
+    width: 48%;
   }
   
   .mission-img-right {
-    flex: 1;
-    max-width: 80%;
+    display: inline-block;
+    width: 48%;
   }
 
-  .mission-img-left img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
+  .mission-img-left {
+    order: 1;
+    margin-right: 4%;
   }
-  
-  .mission-img-right img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
+
+  .mission-img-right {
+    order: 2;
   }
 
   .mission-text {
-    order: 2;
-    padding: 10px 20px;
+    order: 3;
+    padding-top: 20px;
+    max-width: 95%;
   }
 }
-  .mission-img-left
-{
-    display: inline-block;
-    width: 75%;
-  }
-}
-.mission-img-right{
-    display: inline-block;
-    width: 80%;
-  }
-}
+
 
 
 
@@ -410,6 +385,16 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* ========== REVIEWS SECTION ========== */
 .reviews {
   background-color: #f3e8df;
@@ -429,6 +414,16 @@ body {
   font-style: italic;
   color: #2c1e14;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -680,6 +675,12 @@ body {
 
 
 
+
+
+
+
+
+
 /* ========== Mobile Nav Overlay ========== */
 .mobile-nav-overlay {
   display: none;
@@ -713,4 +714,46 @@ body {
   text-decoration: none;
   font-weight: bold;
   border-bottom: 1px solid #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ========== MISSION SECTION: MOBILE COLLAGE FIX ========== */
+@media (max-width: 768px) {
+  .mission-wrapper {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .mission-img-left,
+  .mission-img-right {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  .mission-text {
+    flex-basis: 100%;
+    padding-top: 30px;
+    order: 2;
+    text-align: center;
+  }
+
+  .mission-img-left {
+    order: 1;
+  }
+
+  .mission-img-right {
+    order: 3;
+    margin-top: 0; /* Reset from previous overlap */
+  }
 }
