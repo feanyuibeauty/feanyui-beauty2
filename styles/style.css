@@ -260,8 +260,9 @@ body {
 @media (max-width: 768px) {
   .mission-wrapper {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
   }
 
   /* New: nested flex container for just the images */
@@ -276,12 +277,12 @@ body {
 
   .mission-img-left {
     flex: 1;
-    max-width: 45%;
+    max-width: 75%;
   }
   
   .mission-img-right {
     flex: 1;
-    max-width: 45%;
+    max-width: 80%;
   }
 
   .mission-img-left img {
@@ -303,8 +304,17 @@ body {
     padding: 10px 20px;
   }
 }
-
-
+  .mission-img-left
+{
+    display: inline-block;
+    width: 75%;
+  }
+}
+.mission-img-right{
+    display: inline-block;
+    width: 80%;
+  }
+}
 
 
 
