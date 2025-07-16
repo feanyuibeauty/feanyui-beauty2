@@ -260,35 +260,50 @@ body {
 @media (max-width: 768px) {
   .mission-wrapper {
     flex-direction: column;
-    flex-wrap: nowrap;
     align-items: center;
+    text-align: center;
+  }
+
+  /* New: nested flex container for just the images */
+  .mission-images-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
   }
 
   .mission-img-left {
-    display: inline-block;
-    width: 48%;
+    flex: 1;
+    max-width: 45%;
   }
   
   .mission-img-right {
-    display: inline-block;
-    width: 48%;
+    flex: 1;
+    max-width: 45%;
   }
 
-  .mission-img-left {
-    order: 1;
-    margin-right: 4%;
+  .mission-img-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
   }
-
-  .mission-img-right {
-    order: 2;
+  
+  .mission-img-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
   }
 
   .mission-text {
-    order: 3;
-    padding-top: 20px;
-    max-width: 95%;
+    order: 2;
+    padding: 10px 20px;
   }
 }
+
 
 
 
