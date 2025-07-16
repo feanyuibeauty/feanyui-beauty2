@@ -732,7 +732,7 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
   }
 
   .mission-img-left,
