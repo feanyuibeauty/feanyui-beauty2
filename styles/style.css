@@ -741,7 +741,7 @@ body {
 
 
 
-/* ========== MISSION SECTION: MOBILE COLLAGE FIX ========== */
+/* ========== MISSION SECTION: MOBILE COLLAGE FIX ========== 
 @media (max-width: 768px) {
   .mission-wrapper {
     flex-direction: row;
@@ -769,7 +769,7 @@ body {
 
   .mission-img-right {
     order: 2;
-    margin-top: 0; /* Reset from previous overlap */
+    margin-top: 0; /* Reset from previous overlap
   }
 }
-
+*/
