@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Feanyui Beauty</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/about.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header class="top-header">
+  <div class="nav-left">
+    <img src="assets/logo.png" alt="Logo" class="brand-icon" />
+    <h1 class="brand-name">Feanyui Beauty</h1>
+  </div>
+
+  <div class="desktop-nav-right">
+    <nav class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="policies.html">Policies</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule top-btn" target="_blank">SCHEDULE NOW</a>
+  </div>
+
+  <div class="mobile-header-right">
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
+    <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule" target="_blank">SCHEDULE NOW</a>
+  </div>
+</header>
+
+<div id="mobileNav" class="mobile-nav-overlay">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="policies.html">Policies</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+<!-- ABOUT SECTION -->
+<section class="about-intro">
+  <div class="about-image-wrapper">
+    <img src="assets/about/about-portrait.png" alt="Feanyui Portrait" class="about-image" />
+  </div>
+  <div class="about-text">
+    <h2>Hi there!</h2>
+    <p><strong>Welcome to Feanyui Beauty.</strong></p>
+    <p><em>Pronounced: <strong>Fen-Way</strong></em></p>
+    <p>Here, we celebrate you.</p>
+    <p>
+      Growing up in a family of women, I was the go-to for everyone’s crown—my sisters, my friends, and even my own. 
+      Over time, what started as care and connection evolved into something greater. 
+      Braiding became my art, my expression, and my way of celebrating the beauty and strength in every individual.
+    </p>
+    <p>
+      Feanyui Beauty is more than a braiding service; it’s a space rooted in care and intention. 
+      Here, your time matters, your hair health matters, and you matter. 
+      Whether you're embracing a fresh start or simply amplifying the beauty already within you, 
+      I’m here to make sure you leave feeling confident and radiant.
+    </p>
+    <p>Let’s create something beautiful together.</p>
+  </div>
+</section>
+
+<!-- VALUES SECTION -->
+<section class="values-section">
+  <h3 class="values-title">VALUES</h3>
+  <h2 class="values-subtitle">The Feanyui-Beauty Promise</h2>
+  <p class="values-description">
+    We promise to create an experience that’s as effortless as it is empowering. 
+    Every style is designed with care, protecting your hair and celebrating your unique beauty. 
+    You’ll leave feeling confident, cared for, and unapologetically you.
+  </p>
+
+  <div class="values-icons">
+    <div class="value-icon-box">
+      <img src="assets/about/about-icon1.png" alt="One Stop Shop" />
+      <p>One-Stop-Shop</p>
+    </div>
+    <div class="value-icon-box">
+      <img src="assets/about/about-icon2.png" alt="Modern & Cashless" />
+      <p>Modern & Cashless</p>
+    </div>
+    <div class="value-icon-box">
+      <img src="assets/about/about-icon3.png" alt="Luxury Experience" />
+      <p>Luxury Experience</p>
+    </div>
+  </div>
+</section>
+
+<!-- Divider -->
+<div class="section-divider"></div>
+
+<!-- Subscribe + Footer (shared) -->
+<section class="subscribe-footer-wrapper">
+  <div class="subscribe-left-block">
+    <h2 class="footer-brand">Feanyui Beauty</h2>
+    <h3 class="footer-headline">Join the Feanyui Beauty Community</h3>
+    <p class="footer-subtext">Be the first to know about styles, updates, and exclusive appointments.</p>
+    <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+      <input type="email" placeholder="Email Address" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <div class="subscribe-right-block">
+    <div class="footer-links">
+      <div class="footer-col">
+        <a href="about.html">About</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <a href="services.html">Services</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="policies.html">Policies</a>
+      </div>
+    </div>
+    <div class="divider-wrapper">
+      <div class="divider-line"></div>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/feanyuibeauty/" target="_blank">
+        <img src="assets/icons/instagram.png" alt="Instagram" />
+      </a>
+      <a href="https://www.tiktok.com/@feanyui_beauty" target="_blank">
+        <img src="assets/icons/tiktok.png" alt="TikTok" />
+      </a>
+      <a href="https://www.facebook.com/people/Feanyui-Beauty-Braiding-Services/61571694180320/" target="_blank">
+        <img src="assets/icons/facebook.png" alt="Facebook" />
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © Feanyui Beauty, Inc. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms</a>
+  </div>
+</section>
+
+<!-- Script for mobile menu -->
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("mobileNav");
+    const burger = document.getElementById("hamburger");
+    nav.classList.toggle("active");
+    burger.textContent = nav.classList.contains("active") ? "×" : "☰";
+  }
+</script>
+
+</body>
+</html>
