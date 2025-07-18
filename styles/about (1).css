@@ -1,0 +1,67 @@
+
+/* ABOUT PAGE: Portrait + Greeting Section */
+.about-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #e3bc96;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about-portrait {
+  flex: 1;
+  max-width: 400px;
+  min-width: 280px;
+}
+
+.about-portrait img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-greeting {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-greeting h2 {
+  font-size: 2rem;
+  color: #5e3d1b;
+  margin-bottom: 10px;
+}
+
+.about-greeting em {
+  display: block;
+  font-style: italic;
+  font-size: 1rem;
+  color: #3d2a1b;
+  margin-bottom: 20px;
+}
+
+.about-greeting p {
+  font-size: 1.05rem;
+  color: #2c1e14;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* MOBILE VIEW - STACKED PORTRAIT ABOVE TEXT */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .about-greeting {
+    text-align: center;
+  }
+}
