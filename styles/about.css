@@ -152,11 +152,20 @@
 /* Responsive */
 @media (max-width: 768px) {
   .values-icons {
-    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
     gap: 30px;
+    padding-bottom: 10px;
+  }
+
+  .values-icons div {
+    flex: 0 0 auto;
+    min-width: 120px;
   }
 
   .about-wrapper img {
     max-width: 300px;
   }
 }
+
