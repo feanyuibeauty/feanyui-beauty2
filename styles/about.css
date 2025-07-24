@@ -1,67 +1,96 @@
 
-/* ABOUT PAGE: Portrait + Greeting Section */
+/* ABOUT PAGE STYLES */
 .about-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  background-color: #fdfbf9;
   padding: 60px 20px;
-  background-color: #e3bc96;
-  flex-wrap: wrap;
-  gap: 30px;
 }
 
-.about-portrait {
-  flex: 1;
+.about-wrapper {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-wrapper img {
   max-width: 400px;
-  min-width: 280px;
-}
-
-.about-portrait img {
   width: 100%;
-  height: auto;
   border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 
-.about-greeting {
-  flex: 1;
-  max-width: 600px;
-  text-align: left;
-}
-
-.about-greeting h2 {
+.about-wrapper h2 {
   font-size: 2rem;
   color: #5e3d1b;
-  margin-bottom: 10px;
 }
 
-.about-greeting em {
-  display: block;
-  font-style: italic;
-  font-size: 1rem;
-  color: #3d2a1b;
-  margin-bottom: 20px;
-}
-
-.about-greeting p {
-  font-size: 1.05rem;
-  color: #2c1e14;
+.about-wrapper p {
+  max-width: 700px;
+  font-size: 1.1rem;
   line-height: 1.8;
-  margin-bottom: 10px;
-  font-family: 'Inter', sans-serif;
+  margin: 20px 0;
+  color: #2c1e14;
 }
 
-/* MOBILE VIEW - STACKED PORTRAIT ABOVE TEXT */
+/* VALUES SECTION */
+.values-section {
+  background-color: #fdfbf9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.values-section h2 {
+  font-size: 1.8rem;
+  color: #5e3d1b;
+}
+
+.values-section h3 {
+  font-size: 1.6rem;
+  margin-top: 10px;
+  color: #6b4a2d;
+}
+
+.values-section p {
+  max-width: 750px;
+  margin: 20px auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #2c1e14;
+}
+
+.values-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.values-icons div {
+  text-align: center;
+}
+
+.values-icons img {
+  width: 60px;
+  height: 60px;
+}
+
+.values-icons p {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #2c1e14;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .about-section {
+  .values-icons {
     flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
+    gap: 30px;
   }
 
-  .about-greeting {
-    text-align: center;
+  .about-wrapper img {
+    max-width: 300px;
   }
 }
