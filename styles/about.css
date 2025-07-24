@@ -30,8 +30,12 @@
 
 .about-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
+
 
 .about-title {
   font-size: 2rem;
@@ -67,6 +71,27 @@
   line-height: 1.7;
 }
 
+.about-kelly-top-row,
+.about-kelly-bottom-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.kelly-mobile {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.kelly-mobile1 {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
 /* Desktop default: hide mobile layout, show desktop portrait */
 .about-mobile-stack {
   display: none;
@@ -91,7 +116,7 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    width: 100%;
+    width: 60%;
   }
 
   .about-mobile-portrait {
@@ -108,6 +133,12 @@
   }
 
   .kelly-mobile {
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+.kelly-mobile1 {
     width: 45%;
     height: auto;
     border-radius: 10px;
