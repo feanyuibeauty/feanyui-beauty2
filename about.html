@@ -107,14 +107,17 @@
 <!-- Subscribe + Footer (shared) -->
 <section class="subscribe-footer-wrapper">
   <div class="subscribe-left-block">
-    <h2 class="footer-brand">Feanyui Beauty</h2>
-    <h3 class="footer-headline">Join the Feanyui Beauty Community</h3>
-    <p class="footer-subtext">Be the first to know about styles, updates, and exclusive appointments.</p>
-    <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
-      <input type="email" placeholder="Email Address" required />
-      <button type="submit">Subscribe</button>
-    </form>
-  </div>
+  <h2 class="footer-brand">Feanyui Beauty</h2>
+  <h3 class="footer-headline">Join the Feanyui Beauty Community</h3>
+  <p class="footer-subtext">Be the first to know about styles, updates, and exclusive appointments.</p>
+
+  <!-- Custom MailerLite Subscribe Form -->
+  <form id="feanyui-subscribe-form" class="subscribe-form">
+    <input id="email-input" type="email" placeholder="Email Address" required />
+    <button type="submit">Subscribe</button>
+    <span id="subscribe-message" class="inline-message"></span>
+  </form>
+</div>
 
   <div class="subscribe-right-block">
     <div class="footer-links">
@@ -159,6 +162,38 @@
     burger.textContent = nav.classList.contains("active") ? "×" : "☰";
   }
 </script>
+<script>
+  document.getElementById("feanyui-subscribe-form").addEventListener("submit", function (e) {
+    e.preventDefault();
 
+    const email = document.getElementById("email-input").value;
+    const message = document.getElementById("subscribe-message");
+
+    if (!email) {
+      message.textContent = "Please enter a valid email.";
+      message.style.color = "red";
+      return;
+    }
+
+    const script = document.createElement("script");
+    const callback = "ml_callback_" + Math.floor(Math.random() * 1000000);
+
+    window[callback] = function (response) {
+      if (response && response.success) {
+        message.style.color = "green";
+        message.textContent = "You're subscribed! 🎉";
+        document.getElementById("email-input").value = "";
+      } else {
+        message.style.color = "red";
+        message.textContent = "There was a problem. Please try again.";
+      }
+      delete window[callback];
+    };
+
+    const url = `https://assets.mailerlite.com/jsonp/1687885/forms/160780616858601226/subscribe?callback=${callback}&fields[email]=${encodeURIComponent(email)}`;
+    script.src = url;
+    document.body.appendChild(script);
+  });
+</script>
 </body>
 </html>
