@@ -1,38 +1,104 @@
-
-/* ABOUT PAGE STYLES */
+/* ABOUT SECTION */
 .about-section {
-  background-color: #fdfbf9;
   padding: 60px 20px;
+  background-color: #fdfbf9;
+  color: #2c1e14;
+  font-family: 'Inter', sans-serif;
 }
 
-.about-wrapper {
-  max-width: 1000px;
-  margin: auto;
+.about-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: nowrap; /* Prevent stacking */
+  gap: 40px;
+}
+
+/* Top half: image and greeting */
+.about-image-box {
+  flex: 1;
   text-align: center;
 }
 
-.about-wrapper img {
-  max-width: 400px;
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 30px;
+.about-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
 
-.about-wrapper h2 {
+.about-content {
+  flex: 1;
+  text-align: center;
+}
+
+.about-title {
   font-size: 2rem;
-  color: #5e3d1b;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
 }
 
-.about-wrapper p {
-  max-width: 700px;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin: 20px 0;
-  color: #2c1e14;
+.about-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
+
+.about-pronounce {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* Bottom half: full width text below */
+.about-paragraph,
+.about-closing {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Responsive adjustments: shrink but keep side-by-side layout */
+@media (max-width: 768px) {
+  .about-container {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .about-image-box,
+  .about-content {
+    flex: 1 1 50%;
+  }
+
+  .about-title {
+    font-size: 1.6rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .about-paragraph,
+  .about-closing {
+    padding: 0 10px;
+    font-size: 1rem;
+  }
+}
+
 
 /* VALUES SECTION */
 .values-section {
