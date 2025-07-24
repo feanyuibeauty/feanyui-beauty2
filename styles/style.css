@@ -393,10 +393,9 @@ body {
   transition: transform 0.3s ease;
 }
 
-.splide__slide video:hover {
+.video-wrapper video:hover {
   transform: scale(1.03);
 }
-
 
 
 
