@@ -509,6 +509,15 @@ body {
   gap: 10px;
 }
 
+.feanyui-mailerlite-wrapper {
+  margin-top: 20px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
 .subscribe-form input[type="email"] {
   flex: 1;
   min-width: 100px;
