@@ -67,6 +67,16 @@
   line-height: 1.7;
 }
 
+/* Desktop default: hide mobile layout, show desktop portrait */
+.about-mobile-stack {
+  display: none;
+}
+
+.about-image-box {
+  display: block;
+}
+
+
 /* Responsive adjustments: shrink but keep side-by-side layout */
 @media (max-width: 768px) {
   .about-container {
