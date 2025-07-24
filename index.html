@@ -193,7 +193,23 @@
     <div class="review">"Finally found a stylist who really respects time AND hair health. Love it here!"</div>
   </section>
 
+<!--  
+
+<section class="subscribe-footer-wrapper">
   
+  <div class="subscribe-left-block">
+    <h2 class="footer-brand">Feanyui Beauty</h2>
+    <h3 class="footer-headline">Join the Feanyui Beauty Community</h3>
+    <p class="footer-subtext">Be the first to know about styles, updates, and exclusive appointments.</p>
+
+    
+    <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+      <input type="email" placeholder="Email Address" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+-->
+
 <!-- === Subscribe + Footer Section === -->
 <section class="subscribe-footer-wrapper">
   <!-- LEFT SIDE: Brand + Headline + Subtext + Subscribe form -->
@@ -202,13 +218,19 @@
     <h3 class="footer-headline">Join the Feanyui Beauty Community</h3>
     <p class="footer-subtext">Be the first to know about styles, updates, and exclusive appointments.</p>
 
-    <!-- Email Subscribe Form -->
-    <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
-      <input type="email" placeholder="Email Address" required />
-      <button type="submit">Subscribe</button>
-    </form>
+    <!-- Real MailerLite Form -->
+    <div class="feanyui-mailerlite-form">
+      <iframe 
+        src="https://preview.mailerlite.io/preview/1687885/forms/160780616858601226" 
+        frameborder="0" 
+        scrolling="no" 
+        style="width:100%; max-width:600px; height:450px; border:none; border-radius:12px; background-color:#fff;">
+      </iframe>
+    </div>
   </div>
+</section>
 
+  
   <!-- RIGHT SIDE: Navigation links + Divider + Socials -->
   <div class="subscribe-right-block">
     <div class="footer-links">
