@@ -141,34 +141,39 @@
           <li class="splide__slide"><img src="assets/gallery/gallery3.jpg" alt="Gallery Image" /></li>
           
           <li class="splide__slide">
-          <div class="video-wrapper">
-            <video autoplay loop muted playsinline>
-              <source src="assets/gallery/video1.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </li>
+  <div class="video-wrapper" data-video="assets/gallery/video1.mp4">
+    <video autoplay loop muted playsinline>
+      <source src="assets/gallery/video1.mp4" type="video/mp4" />
+    </video>
+  </div>
+</li>
+
+          
           <li class="splide__slide"><img src="assets/gallery/gallery4.jpg" alt="Gallery Image" /></li>
           <li class="splide__slide"><img src="assets/gallery/gallery5.jpg" alt="Gallery Image" /></li>
           <li class="splide__slide"><img src="assets/gallery/gallery6.jpg" alt="Gallery Image" /></li>
           
           <li class="splide__slide">
-          <div class="video-wrapper">
-            <video autoplay loop muted playsinline>
-              <source src="assets/gallery/video2.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </li>
+  <div class="video-wrapper" data-video="assets/gallery/video1.mp4">
+    <video autoplay loop muted playsinline>
+      <source src="assets/gallery/video2.mp4" type="video/mp4" />
+    </video>
+  </div>
+</li>
+
+          
           <li class="splide__slide"><img src="assets/gallery/gallery7.jpg" alt="Gallery Image" /></li>
           <li class="splide__slide"><img src="assets/gallery/gallery8.jpg" alt="Gallery Image" /></li>
           <li class="splide__slide"><img src="assets/gallery/gallery9.jpg" alt="Gallery Image" /></li>
           
           <li class="splide__slide">
-          <div class="video-wrapper">
-            <video autoplay loop muted playsinline>
-              <source src="assets/gallery/video3.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </li>
+  <div class="video-wrapper" data-video="assets/gallery/video1.mp4">
+    <video autoplay loop muted playsinline>
+      <source src="assets/gallery/video3.mp4" type="video/mp4" />
+    </video>
+  </div>
+</li>
+
           <li class="splide__slide"><img src="assets/gallery/gallery10.jpg" alt="Gallery Image" /></li>
           <li class="splide__slide"><img src="assets/gallery/gallery11.jpg" alt="Gallery Image" /></li>
           <li class="splide__slide"><img src="assets/gallery/gallery12.jpg" alt="Gallery Image" /></li>
@@ -247,48 +252,56 @@
 
   
   <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
-  <script>
-    function toggleMenu() {
-      const nav = document.getElementById("mobileNav");
-      const burger = document.getElementById("hamburger");
-      nav.classList.toggle("active");
-      burger.textContent = nav.classList.contains("active") ? "×" : "☰";
-    }
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
 
-    document.addEventListener('DOMContentLoaded', function () {
-      new Splide('#image-carousel', {
-        type: 'loop',
-        perPage: 5,
-        perMove: 1,
-        autoplay: true,
-        interval: 1500,
-        pauseOnHover: true,
-        pagination: true,
-        arrows: true,
-        breakpoints: {
-          1024: { perPage: 4 },
-          768: { perPage: 3 },
-          480: { perPage: 2 }
-        }
-      }).mount();
-
-      document.querySelectorAll('.splide__slide img').forEach(img => {
-        img.addEventListener('click', () => {
-          basicLightbox.create(`<img src="${img.src}" style="max-width: 90vw; max-height: 90vh;" />`).show();
-        });
-      });
-    });
-  </script>
 <script>
   function toggleMenu() {
     const nav = document.getElementById("mobileNav");
     const burger = document.getElementById("hamburger");
-
     nav.classList.toggle("active");
     burger.textContent = nav.classList.contains("active") ? "×" : "☰";
   }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Splide
+    new Splide('#image-carousel', {
+      type: 'loop',
+      perPage: 5,
+      perMove: 1,
+      autoplay: true,
+      interval: 1500,
+      pauseOnHover: true,
+      pagination: true,
+      arrows: true,
+      breakpoints: {
+        1024: { perPage: 4 },
+        768: { perPage: 3 },
+        480: { perPage: 2 }
+      }
+    }).mount();
+
+    // Image click to open lightbox
+    document.querySelectorAll('.splide__slide img').forEach(img => {
+      img.addEventListener('click', () => {
+        basicLightbox
+          .create(`<img src="${img.src}" style="max-width: 90vw; max-height: 90vh;" />`)
+          .show();
+      });
+    });
+
+    // Video click to open lightbox
+    document.querySelectorAll('.video-wrapper').forEach(wrapper => {
+      wrapper.addEventListener('click', () => {
+        const videoSrc = wrapper.getAttribute('data-video');
+        basicLightbox
+          .create(`
+            <video src="${videoSrc}" controls autoplay style="max-width: 90vw; max-height: 80vh;"></video>
+          `)
+          .show();
+      });
+    });
+  });
 </script>
 </body>
 </html>
