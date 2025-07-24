@@ -139,14 +139,14 @@
 }
 
 .values-icons img {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
 }
 
 .values-icons p {
   font-weight: bold;
   margin-top: 10px;
-  color: #2c1e14;
+  color: #9c5523;
 }
 
 /* Responsive */
