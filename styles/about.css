@@ -70,14 +70,47 @@
 /* Responsive adjustments: shrink but keep side-by-side layout */
 @media (max-width: 768px) {
   .about-container {
-    flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
   }
 
-  .about-image-box,
+  /* Show mobile portrait + kelly top row */
+  .about-mobile-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .about-mobile-portrait {
+    max-width: 85%;
+    border-radius: 12px;
+  }
+
+  .about-kelly-top-row,
+  .about-kelly-bottom-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .kelly-mobile {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Hide the desktop portrait */
+  .about-image-box {
+    display: none;
+  }
+
   .about-content {
-    flex: 1 1 50%;
+    width: 100%;
+    text-align: center;
   }
 
   .about-title {
@@ -96,8 +129,10 @@
   .about-closing {
     padding: 0 10px;
     font-size: 1rem;
+    text-align: center;
   }
 }
+
 
 
 /* VALUES SECTION */
