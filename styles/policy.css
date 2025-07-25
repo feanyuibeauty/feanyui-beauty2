@@ -149,6 +149,10 @@
   font-family: 'Radley', serif;
 }
 
+.policy-section {
+  background: radial-gradient(circle at center, #f5f0ea 0%, #fdfbf9 100%);
+}
+
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
