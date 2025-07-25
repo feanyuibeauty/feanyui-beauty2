@@ -104,6 +104,40 @@
   font-size: 1.05rem;
 }
 
+.policy-box {
+  background-color: #ffffff;
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.policy-box h2.policy-heading {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #5e3d1b;
+  margin-bottom: 25px;
+}
+
+.policy-box ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.policy-box li {
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+
+.policy-box .indent-line {
+  display: inline-block;
+  margin-left: 1.5em;
+  text-indent: -1.5em;
+}
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
