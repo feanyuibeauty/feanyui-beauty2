@@ -18,11 +18,13 @@
 
 .policies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  max-width: 1100px;
+  justify-content: center;
+  max-width: 900px;
   margin: 0 auto 60px auto;
 }
+
 
 .policy-card {
   background: #fff;
@@ -113,20 +115,21 @@
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
-  .section-title {
-    font-size: 2.2rem;
+  .policies-section {
+    padding: 40px 15px;
   }
 
-  .policy-card h3 {
-    font-size: 1.3rem;
+  .policies-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
   }
 
-  .policy-card p {
-    font-size: 0.95rem;
+  .policy-card {
+    padding: 25px 15px;
   }
 
-  .policies-details h2,
-  .policies-notes h2 {
-    font-size: 1.6rem;
+  .policies-details,
+  .policies-notes {
+    padding: 0 10px;
   }
 }
