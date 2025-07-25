@@ -139,6 +139,17 @@
   text-indent: -1.5em;
 }
 
+.policy-subtext {
+  text-align: center;
+  font-size: 1.05rem;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  font-style: italic;
+  color: #5e3d1b;
+  font-family: 'Radley', serif;
+}
+
+
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .policies-section {
