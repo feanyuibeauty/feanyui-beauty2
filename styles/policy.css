@@ -98,7 +98,7 @@
 }
 
 /* Notes section paragraphs */
-..policies-notes p {
+.policies-notes li {
   max-width: 850px;
   margin: 0 auto 20px;
   font-size: 1.05rem;
