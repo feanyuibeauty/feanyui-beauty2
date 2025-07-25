@@ -4,12 +4,12 @@
   background-color: #fdfbf9;
   padding: 60px 20px;
   text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Radley', serif;
 }
 
 .section-title {
   font-size: 2.8rem;
-  color: #2c1e14;
+  color: #5e3d1b;
   margin-bottom: 50px;
   font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
@@ -58,7 +58,7 @@
 }
 
 .policy-card p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Radley', serif;
   font-size: 1rem;
   line-height: 1.7;
   color: #2c1e14;
@@ -70,8 +70,8 @@
 .policies-notes {
   background-color: #fdfbf9;
   mwidth: 100%;
-  padding: 60px 20px;
-  font-family: 'Inter', sans-serif;
+  padding: 10px 20px;
+  font-family: 'Radley', serif;
 }
 
 .policies-details h2,
