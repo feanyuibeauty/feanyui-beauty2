@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Policies | Feanyui Beauty</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header (identical to homepage) -->
+  <header class="top-header">
+    <div class="nav-left">
+      <img src="assets/logo.png" alt="Logo" class="brand-icon" />
+      <h1 class="brand-name">Feanyui Beauty</h1>
+    </div>
+    <div class="desktop-nav-right">
+      <nav class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="policies.html">Policies</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule top-btn" target="_blank">SCHEDULE NOW</a>
+    </div>
+    <div class="mobile-header-right">
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
+      <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule" target="_blank">SCHEDULE NOW</a>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Nav -->
+  <div id="mobileNav" class="mobile-nav-overlay">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="policies.html">Policies</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- Policies Section -->
+  <section class="policies-section">
+    <h2 class="section-title">Booking Policies</h2>
+    <div class="policies-grid">
+      <div class="policy-card">
+        <h3>💳 PAYMENT</h3>
+        <p>A deposit of $20 is required to secure your appointment. The remaining balance can be paid on the day of your appointment via direct card(Tap Pay), Apple Pay, Zelle, or Cash.<br><strong>NO CASHAPP/VENMO</strong></p>
+      </div>
+
+      <div class="policy-card">
+        <h3>⏰ LATE ARRIVAL</h3>
+        <p>Please arrive on time as a courtesy to both of us. After 20 minutes, the appointment will be <strong>CANCELED</strong>, and the deposit forfeited. I appreciate open communication—please let me know if you’re running behind!</p>
+      </div>
+
+      <div class="policy-card">
+        <h3>👥 GUESTS</h3>
+        <p>To maintain a safe, clean, and comfortable environment, each client may bring ONE guest ONLY. I must be made aware at least 24 hours before your appointment. No kids that will need to be supervised as it can interfere with appointment. Guests must remain respectful and professional or will be asked to leave. Thank you!</p>
+      </div>
+
+      <div class="policy-card">
+        <h3>📅 CANCELLATION</h3>
+        <p>Cancellations or Reschedules should be done at least 48 hours to appointment. Failure to do so will cause a 30% charge of on the total service cost. No-Call/No-Shows will result in restrictions on future bookings. Again, communication is key, as I understand that life happens.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Additional Prep Instructions -->
+  <section class="policies-details">
+    <h2>Appointment Preparation</h2>
+    <ul>
+      <li><strong>Preparation Requirements:</strong> Arrive with hair washed, detangled, stretched, and properly blown out from root to end for the best results. Please follow proper techniques when blowdrying to avoid hair damage</li>
+      <li><strong>Clean Hair:</strong> Ensure your hair is CLEAN. Unclean hair will result in a canceled appointment without a refunded deposit.</li>
+      <li><strong>Hair Products:</strong> DO NOT use any oils in your hair prior to your appointment (a little heat protectant is allowed).</li>
+      <li><strong>Haircuts:</strong>  Avoid any haircuts or trimming within a week of your appointment.</li>
+      <li><strong>Hair Length Requirement:</strong> Although I am able to braid short hair, please inform me of any hair lengths shorter than 3 inches.</li>
+      <li><strong>Relaxer Restriction:</strong> Do not apply a fresh relaxer within 2 weeks of your appointment. If you do, the appointment will be canceled.</li>
+      <li><strong>Surveillance Notice:</strong> For safety, the premises are monitored by surveillance with audio.</li>
+      <li><strong>Photo & Video Consent:</strong> By booking, you consent to photos and videos being taken during/after your appointment.</li>
+      <li><strong>Appointment Time:</strong> Although specific time is allocated for each style, other circumstances can affect the length of appointment. I work fast but quality of my work is important, so I DO NOT rush that. Please paln accordingly</li>
+    </ul>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Final Notes -->
+  <section class="policies-notes">
+    <h2>Additional Notes</h2>
+    <p><strong>Hair Recommendations:</strong> For styles requiring human hair/curly pieces, I have trusted brands linked on my services page. Please plan ahead and purchase hair prior to your appointment.</p>
+    <p><strong>Hair Recommendations:</strong> Please order the hair to my address to allow hair prep prior to your appointment.</p>
+    <p><strong>Need Help?</strong> If you’re unsure about anything, feel free to contact me directly.</p>
+    <p><strong>Location:</strong> Address will be provided 24 hours prior to appointment. Please allow enough time — I do not rush my work!</p>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Footer Subscribe & Footer (same as homepage) -->
+  <section class="subscribe-footer-wrapper">
+    <div class="subscribe-left-block">
+      <h2 class="footer-brand">Feanyui Beauty</h2>
+      <h3 class="footer-headline">Join the Feanyui Beauty Community</h3>
+      <p class="footer-subtext">Be the first to know about styles, updates, and exclusive appointments.</p>
+      <form id="feanyui-subscribe-form" class="subscribe-form">
+        <input id="email-input" type="email" placeholder="Email Address" required />
+        <button type="submit">Subscribe</button>
+        <span id="subscribe-message" class="inline-message"></span>
+      </form>
+    </div>
+
+    <div class="subscribe-right-block">
+      <div class="footer-links">
+        <div class="footer-col">
+          <a href="about.html">About</a>
+          <a href="faqs.html">FAQs</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <a href="services.html">Services</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="policies.html">Policies</a>
+        </div>
+      </div>
+      <div class="divider-wrapper"><div class="divider-line"></div></div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/feanyuibeauty/" target="_blank"><img src="assets/icons/instagram.png" alt="Instagram" /></a>
+        <a href="https://www.tiktok.com/@feanyui_beauty" target="_blank"><img src="assets/icons/tiktok.png" alt="TikTok" /></a>
+        <a href="https://www.facebook.com/people/Feanyui-Beauty-Braiding-Services/61571694180320/" target="_blank"><img src="assets/icons/facebook.png" alt="Facebook" /></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © Feanyui Beauty, Inc. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms</a>
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("mobileNav");
+      const burger = document.getElementById("hamburger");
+      nav.classList.toggle("active");
+      burger.textContent = nav.classList.contains("active") ? "×" : "☰";
+    }
+
+    document.getElementById("feanyui-subscribe-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const email = document.getElementById("email-input").value;
+      const message = document.getElementById("subscribe-message");
+      if (!email) {
+        message.textContent = "Please enter a valid email.";
+        message.style.color = "red";
+        return;
+      }
+      const script = document.createElement("script");
+      const callback = "ml_callback_" + Math.floor(Math.random() * 1000000);
+      window[callback] = function (response) {
+        if (response && response.success) {
+          message.style.color = "green";
+          message.textContent = "You're subscribed! 🎉";
+          document.getElementById("email-input").value = "";
+        } else {
+          message.style.color = "red";
+          message.textContent = "There was a problem. Please try again.";
+        }
+        delete window[callback];
+      };
+      const url = `https://assets.mailerlite.com/jsonp/1687885/forms/160780616858601226/subscribe?callback=${callback}&fields[email]=${encodeURIComponent(email)}`;
+      script.src = url;
+      document.body.appendChild(script);
+    });
+  </script>
+</body>
+</html>
