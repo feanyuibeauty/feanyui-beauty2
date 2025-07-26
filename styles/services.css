@@ -1,0 +1,70 @@
+.what-to-expect-section {
+  padding: 60px 30px;
+  background-color: #fdfbf9;
+  text-align: center;
+}
+
+.what-to-expect-section .section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #5e3d1b;
+  margin-bottom: 10px;
+}
+
+.expect-description {
+  font-size: 1.05rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #2c1e14;
+}
+
+.expect-flow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.expect-stage {
+  flex: 1 1 calc(33.333% - 40px);
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.expect-stage img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.expect-stage h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  color: #6b4a2d;
+  margin-bottom: 10px;
+}
+
+.expect-stage p {
+  font-size: 0.95rem;
+  color: #2c1e14;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .expect-flow {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .expect-stage {
+    flex: 1 1 100%;
+  }
+}
