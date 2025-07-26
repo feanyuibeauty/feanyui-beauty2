@@ -369,14 +369,7 @@ body {
 }
 
 /* View All Button under Gallery */
-.view-all-btn {
-  display: inline-block;
-  margin-top: 20px;
-  font-weight: bold;
-  color: #2c1e14;
-  text-decoration: underline;
-  font-size: 0.95rem;
-}
+
 
 .video-wrapper {
   width: 100%;
