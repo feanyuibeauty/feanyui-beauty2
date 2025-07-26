@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | Feanyui Beauty</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/services.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="top-header">
+  <div class="nav-left">
+    <img src="assets/logo.png" alt="Logo" class="brand-icon" />
+    <h1 class="brand-name">Feanyui Beauty</h1>
+  </div>
+  <div class="desktop-nav-right">
+    <nav class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="policies.html">Policies</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule top-btn" target="_blank">SCHEDULE NOW</a>
+  </div>
+  <div class="mobile-header-right">
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
+    <a href="https://feanyuibeauty.glossgenius.com" class="btn-schedule" target="_blank">SCHEDULE NOW</a>
+  </div>
+</header>
+
+<div id="mobileNav" class="mobile-nav-overlay">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="policies.html">Policies</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+<!-- SECTION DIVIDER -->
+<div class="section-divider"></div>
+
+<!-- WHAT TO EXPECT SECTION -->
+<section class="expect-section">
+  <h2 class="expect-heading">What to Expect</h2>
+  <div class="expect-journey-container">
+
+    <div class="expect-step" id="step1">
+      <img src="assets/services/welcome.jpg" alt="Welcome" class="expect-img" />
+      <div class="expect-label">
+        <h3>Welcome</h3>
+        <p>Arrive to a warm greeting and cozy setup with optional water or snack while we settle in.</p>
+      </div>
+    </div>
+
+    <div class="expect-curve curve-down-right"></div>
+
+    <div class="expect-step" id="step2">
+      <img src="assets/services/consult.jpg" alt="Consult" class="expect-img" />
+      <div class="expect-label">
+        <h3>Consult</h3>
+        <p>We’ll walk through your style goals and hair prep together for clarity and confidence.</p>
+      </div>
+    </div>
+
+    <div class="expect-curve curve-up-right"></div>
+
+    <div class="expect-step" id="step3">
+      <img src="assets/services/braid.jpg" alt="Braid" class="expect-img" />
+      <div class="expect-label">
+        <h3>Braid</h3>
+        <p>Time to braid! Sit back and relax — enjoy complimentary WiFi, a snack, or your favorite show.</p>
+      </div>
+    </div>
+
+    <div class="expect-curve curve-down-left"></div>
+
+    <div class="expect-step" id="step4">
+      <img src="assets/services/checkin.jpg" alt="Check-In" class="expect-img" />
+      <div class="expect-label">
+        <h3>Check-In</h3>
+        <p>Halfway through, we’ll pause to check length, tension, and your comfort. Adjustments welcome!</p>
+      </div>
+    </div>
+
+    <div class="expect-curve curve-up-left"></div>
+
+    <div class="expect-step" id="step5">
+      <img src="assets/services/finish.jpg" alt="Finish & Pics" class="expect-img" />
+      <div class="expect-label">
+        <h3>Finish & Pics</h3>
+        <p>Once your crown is complete, we’ll tidy edges, style you up, and take optional photos for our gallery.</p>
+      </div>
+    </div>
+
+    <div class="expect-curve curve-down-left"></div>
+
+    <div class="expect-step" id="step6">
+      <img src="assets/services/complete.jpg" alt="Complete" class="expect-img" />
+      <div class="expect-label">
+        <h3>Complete</h3>
+        <p>You're all set! Checkout is seamless and cashless — and you leave glowing.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION DIVIDER -->
+<div class="section-divider"></div>
+
+<!-- SUBSCRIBE + FOOTER -->
+<section class="subscribe-footer-wrapper">
+  <div class="subscribe-left-block">
+    <h2 class="footer-brand">Feanyui Beauty</h2>
+    <h3 class="footer-headline">Join the Feanyui Beauty Community</h3>
+    <p class="footer-subtext">Be the first to know about styles, updates, and exclusive appointments.</p>
+    <form id="feanyui-subscribe-form" class="subscribe-form">
+      <input id="email-input" type="email" placeholder="Email Address" required />
+      <button type="submit">Subscribe</button>
+      <span id="subscribe-message" class="inline-message"></span>
+    </form>
+  </div>
+
+  <div class="subscribe-right-block">
+    <div class="footer-links">
+      <div class="footer-col">
+        <a href="about.html">About</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <a href="services.html">Services</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="policies.html">Policies</a>
+      </div>
+    </div>
+    <div class="divider-wrapper">
+      <div class="divider-line"></div>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/feanyuibeauty/" target="_blank"><img src="assets/icons/instagram.png" alt="Instagram" /></a>
+      <a href="https://www.tiktok.com/@feanyui_beauty" target="_blank"><img src="assets/icons/tiktok.png" alt="TikTok" /></a>
+      <a href="https://www.facebook.com/people/Feanyui-Beauty-Braiding-Services/61571694180320/" target="_blank"><img src="assets/icons/facebook.png" alt="Facebook" /></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © Feanyui Beauty, Inc. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms</a>
+  </div>
+</section>
+
+<!-- SCRIPTS -->
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("mobileNav");
+    const burger = document.getElementById("hamburger");
+    nav.classList.toggle("active");
+    burger.textContent = nav.classList.contains("active") ? "×" : "☰";
+  }
+</script>
+
+<script>
+  document.getElementById("feanyui-subscribe-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const email = document.getElementById("email-input").value;
+    const message = document.getElementById("subscribe-message");
+
+    if (!email) {
+      message.textContent = "Please enter a valid email.";
+      message.style.color = "red";
+      return;
+    }
+
+    const script = document.createElement("script");
+    const callback = "ml_callback_" + Math.floor(Math.random() * 1000000);
+    window[callback] = function (response) {
+      if (response && response.success) {
+        message.style.color = "green";
+        message.textContent = "You're subscribed! 🎉";
+        document.getElementById("email-input").value = "";
+      } else {
+        message.style.color = "red";
+        message.textContent = "There was a problem. Please try again.";
+      }
+      delete window[callback];
+    };
+
+    const url = `https://assets.mailerlite.com/jsonp/1687885/forms/160780616858601226/subscribe?callback=${callback}&fields[email]=${encodeURIComponent(email)}`;
+    script.src = url;
+    document.body.appendChild(script);
+  });
+</script>
+</body>
+</html>
