@@ -2,7 +2,7 @@
 
 .policies-section {
   /*background-color: #fdfbf9;*/
-  background: radial-gradient(circle at center, #f5f0ea 0%, #fdfbf9 100%);
+  background: radial-gradient(circle at center, #f3e8df 0%, #f3e8df 100%);
   padding: 60px 20px;
   text-align: center;
   font-family: 'Radley', serif;
@@ -69,7 +69,7 @@
 /* Appointment Preparation */
 .policies-details,
 .policies-notes {
-  background-color: #fdfbf9;
+  background-color: #f3e8df;
   mwidth: 100%;
   padding: 10px 200px;
   font-family: 'Radley', serif;
